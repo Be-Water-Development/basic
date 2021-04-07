@@ -9,6 +9,6 @@ const second = "to the";
 const third = "jungle!";
 
 const welcomeStatement = first + " " + second + " " + third;
-console.log(welcomeStatement);
+
 // Do not alter this line
 export const bundle = { welcomeStatement };

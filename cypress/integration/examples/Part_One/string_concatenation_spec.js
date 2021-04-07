@@ -8,6 +8,8 @@ describe("welcomeStatement testing", () => {
     expect(bundle.welcomeStatement).to.equal("Welcome to the jungle!");
   });
   it("welcomeStatement contains three spaces", () => {
-    expect(bundle.welcomeStatement.split(" ").length).to.equal(3);
+    expect(
+      bundle.welcomeStatement.split("").filter((el) => el === " ").length
+    ).to.equal(3);
   });
 });
