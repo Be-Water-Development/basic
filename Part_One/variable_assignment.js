@@ -9,8 +9,8 @@
 
 var number = 10;
 let array = ["a", "b", "c"];
+const object = { num: number, arr: array };
 
-const varAssignmentBundle = { num: number, arr: array };
-
-// Do not alter this line
-export { varAssignmentBundle };
+// Do not alter below this line
+const bundle = { num: number, arr: array, obj: object };
+export { bundle };
