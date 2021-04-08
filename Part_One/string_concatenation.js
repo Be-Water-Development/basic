@@ -10,5 +10,5 @@ const third = "jungle!";
 
 const welcomeStatement = first + " " + second + " " + third;
 
-// Do not alter this line
+// Do not alter below this line
 export const bundle = { welcomeStatement };

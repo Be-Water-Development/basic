@@ -1,7 +1,4 @@
-const { expect } = require("chai");
-const { describe } = require("mocha");
-
-import { bundle } from "../../../../Part_One/string_concatenation";
+import { bundle } from "../../../Part_One/string_concatenation";
 
 describe("welcomeStatement testing", () => {
   it("welcomeStatement is equal to `Welcome to the jungle!`", () => {

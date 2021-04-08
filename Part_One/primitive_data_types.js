@@ -12,7 +12,7 @@ const loveCoding = true;
 const programmingHesitations = null;
 
 // Do not alter these lines
-export const primitiveDataTypeBundle = {
+export const bundle = {
   birthCity,
   birthYear,
   loveCoding,

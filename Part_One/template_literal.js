@@ -4,8 +4,6 @@
 // ECMAScript 6 (ES6), released in 2015, brought about many new features to JavaScript which we will be exploring throughout this course.
 // In this lesson we will focus on the template literal.
 
-import { isArrayLike } from "cypress/types/lodash"
-
 // Template literals are a special type of string that make creating complex strings so much easier.
 // Template literals are created by surrounding text between opening and closing backticks (``).
 // Inside a template literal, you're able to refer to variables or execute code by using ${}.
@@ -21,8 +19,14 @@ import { isArrayLike } from "cypress/types/lodash"
 
 // Challenge
 // Declare two variables, `x` and `y` and set them to any two numbers you like
-// Then declare a `solution` variable which is the result of adding x and y together 
-// within a sentence; the correct implementation will look like 
+// Then declare a `solution` variable which is the result of adding x and y together
+// within a sentence; the correct implementation will look like
 // "The sum of a and b is c"
+// Do not include punctuation in your solution.
 
+const x = 2;
+const y = 3;
+const solution = `The sum of ${x} and ${y} is ${x + y}`;
 
+//Do not alter below this line
+export const bundle = { x: x, y: y, solution: solution };
