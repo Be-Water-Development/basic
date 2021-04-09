@@ -6,7 +6,7 @@
 
 // You can find a full list of all the available string properties and methods here: https://www.w3schools.com/jsref/jsref_obj_string.asp
 
-// But wait! Before you get overwhelmed with all that information, let’s focus on a simple property called .length. Which, you guessed it, finds the length of a string.
+// Before you get overwhelmed with all that information, let’s focus on a simple property called .length. Which, you guessed it, finds the length of a string.
 // Here is an example:
 
 // const myString = "Hello";

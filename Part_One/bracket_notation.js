@@ -33,8 +33,7 @@
 // Challenge
 
 // 1) Declare a variable firstChar and assign it a value of the first letter of the variable joke using bracket notation.
-// 2) Declare a variable eightChar and assign it a value of the first letter of the variable joke
-// using bracket notation.
+// 2) Declare a variable tenthChar and assign it a value of the first letter of the variable joke using bracket notation.
 // 3) Declare a variable lastChar and assign it a value of the last letter of the variable answer using bracket notation. Utilize the .length property learned
 // in the string methods and properties section.
 
