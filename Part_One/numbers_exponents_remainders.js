@@ -30,13 +30,13 @@ console.log(5 % 2); // return 1, so it is odd.
 // Declare a constant sevenModEight and assign it there remainder of dividing 7 by 8.
 
 const sixSquared = 6 ** 2;
-const fourCubed = 4 ** 2;
+const fourCubed = 4 ** 3;
 const sixtySixModSeven = 66 % 7;
 const sevenModEight = 7 % 8;
 
 //Uncomment below to check your answers
 console.log(sixSquared); // 36
-console.log(fourCubed); // 16
+console.log(fourCubed); // 64
 console.log(sixtySixModSeven); // 3
 console.log(sevenModEight); // 7
 
