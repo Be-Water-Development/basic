@@ -5,9 +5,9 @@ describe("String methods and properites testing", () => {
     expect(bundle.lengthCount).to.equal(16);
   });
   it("testing the creation of variable upper that is equal to all uppercase letters", () => {
-    expect(bundle.upperCase).to.equal("GREEN IS THE COLOR");
+    expect(bundle.upperCase).to.equal(bundle.upperCase.toUpperCase());
   });
   it("testing the creation of variable lower that is equal to all lowercase letters", () => {
-    expect(bundle.lowerCase).to.equal("green is the color");
+    expect(bundle.lowerCase).to.equal(bundle.lowerCase.toLowerCase());
   });
 });
