@@ -56,6 +56,17 @@ for (let i = 0; i < fruits.length; i++) {
 
 // Challenge
 
+let countToTen = 0;
+
+// Using a for loop, take the variable countToTen and increase it by 1 on each iteration, until countToTen is equal to 10.
+// Add code here
+
+for (let i = 0; i < 10; i++) {
+  countToTen++;
+}
+
+// Challenge continued
+
 // Using a for loop, loop over the nums array, multiplying each number by 11 on each iteration.
 // Add code here
 
@@ -105,12 +116,14 @@ for (let i = 0; i < park.length; i++) {
 }
 
 //Uncomment below to check your answers
+// console.log(countToTen); // 10
 // console.log(nums); // [ 11, 22, 33, 44, 55, 66 ]
 // console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
 // console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
 
 //Do not alter below this line
 export const bundle = {
+  countToTen: countToTen,
   nums: nums,
   weatherUpdate: weatherUpdate,
   nationalParks: nationalParks,
