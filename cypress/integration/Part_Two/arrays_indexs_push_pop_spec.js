@@ -11,9 +11,9 @@ describe("Array index and pop and push methods testing", () => {
     expect(bundle.citiesLength).to.equal(5);
   });
   it("Testing the use of the push method on nums array to add value 7", () => {
-    expect(bundle.nums[bundle.nums.length - 1]).to.equal(7);
+    expect(bundle.nums).to.eql([1, 2, 3, 4, 5, 6, 7]);
   });
   it("Testing the use of the pop method to remove value 55 from moreNums array", () => {
-    expect(bundle.moreNums[bundle.moreNums.length - 1]).to.equal(44);
+    expect(bundle.moreNums).to.eql([11, 22, 33, 44]);
   });
 });
