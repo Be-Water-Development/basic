@@ -24,7 +24,7 @@
 // Floats
 
 // Any number with a decimal point is considered a float. Javascript can cause rounding errors with floats, and they cannot always be represented accurately.
-// This had to do with how Javascript handles numbers under the hood. Keep this in mind when dealing with decimals in Javascript. Here is an example:
+// This has to do with how Javascript handles numbers under the hood. Keep this in mind when dealing with decimals in Javascript. Here is an example:
 
 // const threeHundredTimesThree = 300.3 * 3;
 // console.log(threeHundredTimesThree); //900.9000000000001

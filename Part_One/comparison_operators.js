@@ -1,6 +1,6 @@
 // Booleans
 
-// Booleans are a primitive data type in Javascript that can either hold the value true or false. You can conditionally render blocks of code with
+// Booleans are a primitive data type in Javascript that can hold the value true or false. You can conditionally render blocks of code with
 // booleans which will be useful down the road. Many built Javascript methods return either true or false. Here is an example:
 
 let likesBeets = true;
@@ -11,7 +11,7 @@ let likesBears = false; // notice no quotes
 
 // Comparison Operators
 
-// Comparison operators are how we compare different values in Javascript.
+// Comparison operators are how we compare different values in Javascript. All comparison operators return boolean values.
 
 // < Less than
 // > Greater than
@@ -50,8 +50,8 @@ let likesBears = false; // notice no quotes
 // Declare a variable smallNum and set it equal to 5, declare another variable bigNum and set is equal to 10.
 // Declare a variable isBigger and assign the value to be a comparison if bigNum is greater than small num.
 // Declare a variable favNum and set it equal to your favorite number as a number. Declare another variable favNumString and set it equal to your favorite number as a string.
-// Declare a variable isLooselyEqual and compare favNum and favNumString with the loosely equal operator.
-// Declare a variable isStrictlyEqual and compare favNum and favNumString with the strictly equal operator.
+// Declare a variable isLooselyEqual and assign its value to be a comparison of favNum and favNumString with the loosely equal operator.
+// Declare a variable isStrictlyEqual and assign its value to be a comparison of favNum and favNumString with the strictly equal operator.
 
 const smallNum = 5;
 const bigNum = 10;

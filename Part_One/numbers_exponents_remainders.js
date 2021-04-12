@@ -13,7 +13,7 @@
 // The modulus (remainder) operator (%) returns the remainder of dividing the first number by the second number. Here are some examples:
 
 // console.log(6 % 2); // returns 0, since 2 divides evenly into 6
-// console.log(7 % 3); // returns 1, since 3 goes into 7 twice, leaving a remainder of 3
+// console.log(7 % 3); // returns 1, since 3 goes into 7 twice, leaving a remainder of 1
 // console.log(3 % 4); // returns 3, since 3 is smaller than 4, it cannot divide into 4, so the remainder is 3
 
 //A common implementation of the remainder operator is determining if a number is even or odd. If a number is divisible by 2, leaving a remainder of 0, then it is
@@ -26,8 +26,8 @@
 
 // Declare a constant sixSquared assign it the value of 6 raised to the power of 2 using the exponentiation operator.
 // Declare a constant fourCubed assign it the value of 4 raised to the power of 3 using the exponentiation operator.
-// Declare a constant sixtySixModSeven and assign it the remainder of dividing 66 by 7.
-// Declare a constant sevenModEight and assign it there remainder of dividing 7 by 8.
+// Declare a constant sixtySixModSeven and assign it the value of the remainder of dividing 66 by 7.
+// Declare a constant sevenModEight and assign it the value of the remainder of dividing 7 by 8.
 
 const sixSquared = 6 ** 2;
 const fourCubed = 4 ** 3;
