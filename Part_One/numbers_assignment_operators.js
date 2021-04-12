@@ -1,6 +1,6 @@
 // Numbers assignment operators
 
-// Assignment operators are a shortcut to alter a number with a specified value.
+// Assignment operators are a shortcut to alter a number with a specified value. For a full list of all the assignment operators, follow this link: https://www.w3schools.com/js/js_assignment.asp
 
 // += addition
 // -= subtraction
