@@ -57,6 +57,7 @@ for (let i = 0; i < fruits.length; i++) {
 // Challenge
 
 // Using a for loop, loop over the nums array, multiplying each number by 11 on each iteration.
+// Add code here
 
 const nums = [1, 2, 3, 4, 5, 6];
 
@@ -64,7 +65,53 @@ for (let i = 0; i < nums.length; i++) {
   nums[i] *= 11;
 }
 
+// Challenge continued
+
+const weather = ["raining", "sunny", "stormy", "hailing"];
+const weatherUpdate = [];
+
+// Iterate over the weather array using a for loop, pushing a string with the format "It is [weather] outside" into the weatherUpdate array.
+// Add code here
+
+for (let i = 0; i < weather.length; i++) {
+  weatherUpdate.push(`It is ${weather[i]} outside`);
+}
+
+//Challenge continued
+
+const park = ["Glacier", "Yellowstone", "Yosemite"];
+const location = ["Montana", "Wyoming", "California"];
+const attraction = [
+  "700 miles of hiking trails",
+  "hot springs and geysers",
+  "El Capitan and Half Dome",
+];
+
+const nationalParks = [];
+
+//Each array above(park, location and attraction) correspond to eachother at a certain index. Loop through the arrays and push a string into nationalParks so that
+//nationalParks returns the following:
+// [
+//   'Glacier National Park is in Montana and attractions are 700 miles of hiking trails',
+//   'Yellowstone National Park is in Wyoming and attractions are hot springs and geysers',
+//   'Yosemite National Park is in California and attractions are El Capitan and Half Dome'
+// ]
+
+//Add code here
+for (let i = 0; i < park.length; i++) {
+  nationalParks.push(
+    `${park[i]} National Park is in ${location[i]} and attractions are ${attraction[i]}`
+  );
+}
+
 //Uncomment below to check your answers
 // console.log(nums); // [ 11, 22, 33, 44, 55, 66 ]
+// console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
+// console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
 
-export const bundle = { nums: nums };
+//Do not alter below this line
+export const bundle = {
+  nums: nums,
+  weatherUpdate: weatherUpdate,
+  nationalParks: nationalParks,
+};

@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_Two/arrays_indexs_push_pop";
+import { bundle } from "../../../Part_Two/arrays_index_push_pop";
 
 describe("Array index and pop and push methods testing", () => {
   it("Testing the creating of the cities array", () => {
