@@ -28,4 +28,7 @@ describe("If statements control flow testing", () => {
       "buzz",
     ]);
   });
+  it("testing the implementation of if statements to determine if a number is even, multiplying even numbers by 10", () => {
+    expect(bundle.isItEven).to.eql([1, 20, 3, 40, 5, 60, 7, 80, 9, 100]);
+  });
 });

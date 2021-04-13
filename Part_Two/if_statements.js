@@ -73,6 +73,7 @@ const fizzbuzz = [];
 
 // Use a loop to iterate through the numbers 1 through 20. Push each number into fizzbuzz, but push the string "fizz" in place of numbers divisible by 3, "buzz" in place of numbers divisible by
 // 5, and fizzbuzz in place of numbers divisible by both 3 and 5. Remember to utilize the remainder/modulo operator.
+// Add code here
 
 for (let i = 1; i <= 20; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -89,9 +90,26 @@ for (let i = 1; i <= 20; i++) {
   }
 }
 
+// Challenge continued
+
+const isItEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Iterate through the isItEven array, if the number is even, multiply the number by 10.
+
+for (let i = 0; i < isItEven.length; i++) {
+  if (isItEven[i] % 2 === 0) {
+    isItEven[i] *= 10;
+  }
+}
+
 //Uncomment the below to check your answers
 // console.log(result); // 88
 // console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
+// console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
 
 // Do not alter below this line
-export const bundle = { result: result, fizzbuzz: fizzbuzz };
+export const bundle = {
+  result: result,
+  fizzbuzz: fizzbuzz,
+  isItEven: isItEven,
+};
