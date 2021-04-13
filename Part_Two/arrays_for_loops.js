@@ -100,7 +100,7 @@ const attraction = [
 
 const nationalParks = [];
 
-//Each array above(park, location and attraction) correspond to eachother at a certain index. Loop through the arrays and push a string into nationalParks so that
+//Each array above(park, location and attraction) correspond to each other at a certain index. Loop through the arrays and push a string into nationalParks so that
 //nationalParks returns the following:
 // [
 //   'Glacier National Park is in Montana and attractions are 700 miles of hiking trails',
