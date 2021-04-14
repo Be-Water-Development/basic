@@ -71,7 +71,7 @@ if (num < 10) {
 
 const fizzbuzz = [];
 
-// Use a loop to iterate through the numbers 1 through 20. Push each number into fizzbuzz, but push the string "fizz" in place of numbers divisible by 3, "buzz" in place of numbers divisible by
+// Use a for loop to iterate through numbers 1 through 20. Push each number into fizzbuzz, but push the string "fizz" in place of numbers divisible by 3, "buzz" in place of numbers divisible by
 // 5, and fizzbuzz in place of numbers divisible by both 3 and 5. Remember to utilize the remainder/modulo operator.
 // Add code here
 
