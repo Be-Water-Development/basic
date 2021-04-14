@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/variable_assignment";
+import { bundle } from "../../../Fundamentals_Part_One/variable_assignment";
 
 describe("Variable Assignment testing", () => {
   it("testing the creation of a var whose type is number and value is 10", () => {

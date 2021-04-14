@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/comparison_operators";
+import { bundle } from "../../../Fundamentals_Part_One/comparison_operators";
 
 describe("Comparison operators testing", () => {
   it("testing the creating of the varaible smallNum of type number", () => {

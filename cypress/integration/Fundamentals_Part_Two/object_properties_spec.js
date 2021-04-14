@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_Two/object_properties";
+import { bundle } from "../../../Fundamentals_Part_Two/object_properties";
 
 describe("Objects and for.. in loops testing", () => {
   it("testing the iteration of items object with a for in loop, assigning the value of found to boolean true", () => {

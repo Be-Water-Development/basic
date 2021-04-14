@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/template_literal";
+import { bundle } from "../../../Fundamentals_Part_One/template_literal";
 
 describe("Template Literal testing", () => {
   it("testing the creating of varible x whose type is a number", () => {

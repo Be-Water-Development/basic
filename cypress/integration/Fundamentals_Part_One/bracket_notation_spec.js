@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/bracket_notation";
+import { bundle } from "../../../Fundamentals_Part_One/bracket_notation";
 
 describe("bracket notation testing", () => {
   it("testing the creation of variable firstChar that is equal to the string 'w'", () => {

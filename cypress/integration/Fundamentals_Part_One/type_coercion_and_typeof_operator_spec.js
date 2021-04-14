@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/type_coercion_and_typeof_operator";
+import { bundle } from "../../../Fundamentals_Part_One/type_coercion_and_typeof_operator";
 
 describe("type coercion and typeof operator testing", () => {
   it("testing the creation of the varaible stringOrNum equal to the string value 1055", () => {

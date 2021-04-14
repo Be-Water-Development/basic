@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_Two/additional_challenges";
+import { bundle } from "../../../Fundamentals_Part_Two/additional_challenges";
 
 describe("Additional array and object challenges testing", () => {
   it("testing the implementation of a for loop to add nested subarrays to an array", () => {
