@@ -18,6 +18,7 @@ describe("Part one functions testing", () => {
     expect(bundle.addTwoNums(3, 4)).to.equal("3 plus 4 equals 7");
   });
   it("testing function lastLetter is of type function and the invocation of lastLetter('AVOCADOS') to equal 'S'", () => {
+    expect(typeof bundle.lastLetter).to.equal("function");
     expect(bundle.lastLetter("AVOCADOS")).to.equal("S");
   });
 });
