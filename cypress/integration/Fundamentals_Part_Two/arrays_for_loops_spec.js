@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_Two/arrays_for_loops";
+import { bundle } from "../../../Fundamentals_Part_Two/arrays_for_loops";
 
 describe("Arrays for loops testing", () => {
   it("testing the incrementing of variable countToTen to 10 with a for loop", () => {

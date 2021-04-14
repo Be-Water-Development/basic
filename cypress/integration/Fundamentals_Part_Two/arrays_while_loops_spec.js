@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_Two/arrays_while_loops";
+import { bundle } from "../../../Fundamentals_Part_Two/arrays_while_loops";
 
 describe("While loop testing", () => {
   it("testing the use of a while loop to decrement countDown to 0", () => {

@@ -1,4 +1,4 @@
-import { bundle } from "../../../Part_One/string_methods_and_properties";
+import { bundle } from "../../../Fundamentals_Part_One/string_methods_and_properties";
 
 describe("String methods and properites testing", () => {
   it("testing the creation of variable count that is equal to the length of 16", () => {
