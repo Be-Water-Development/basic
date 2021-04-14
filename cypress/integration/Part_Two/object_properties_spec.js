@@ -1,7 +1,7 @@
 import { bundle } from "../../../Part_Two/object_properties";
 
 describe("Objects and for.. in loops testing", () => {
-  it("testing the iteration of items object with a for in loop, assigning the value of found to true", () => {
+  it("testing the iteration of items object with a for in loop, assigning the value of found to boolean true", () => {
     expect(bundle.found).to.equal(true);
   });
   it("testing the iteration of objOfNums array, pushing the nums greater than 5 into greaterThanFiveArray", () => {

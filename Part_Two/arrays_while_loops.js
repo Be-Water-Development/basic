@@ -1,6 +1,6 @@
 // While loops
 
-// The while loop loops through a block of code as long as the conditional expression evaluates to  true.
+// The while loop loops through a block of code as long as the conditional expression evaluates to true.
 // Here is an example, uncomment the console logs to see whats happening under the hood.
 
 let count = 0;
