@@ -109,6 +109,7 @@ export const bundle = {
   one: one,
   two: two,
   dwight: dwight,
+  bears: bears,
   orderFood: orderFood,
   restaurantOpen: restaurantOpen,
   callRestaurant: callRestaurant,
