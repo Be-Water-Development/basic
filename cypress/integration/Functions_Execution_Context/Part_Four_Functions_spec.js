@@ -37,4 +37,36 @@ describe("Functions part four testing", () => {
       .invoke("sumOfElevens", [2, 3, 5, 10, 2, 0], [9, 4, 5, 6, 2, 11])
       .should("deep.equal", ["eleven", 3, 5, 10, 2, "eleven"]);
   });
+  it("testing the creation of function countFromTen that utilizes a while loop to count down from 10 to 0, pushing strings of numbers at interals 7, 3, and 0", () => {
+    expect(typeof bundle.countFromTen).to.equal("function");
+    cy.wrap({ countFromTen: bundle.countFromTen })
+      .invoke("countFromTen", 10)
+      .should("deep.equal", [
+        10,
+        9,
+        8,
+        7,
+        "seven",
+        6,
+        5,
+        4,
+        3,
+        "three",
+        2,
+        1,
+        0,
+        "zero",
+      ]);
+  });
+  it("testing the implemention of function pickANumber and if statements to determine the input closest to a randomly generated number", () => {
+    expect(bundle.pickANumber(22, 63)).to.satisfy(
+      () => "Player 1 wins" || "Player 2 wins"
+    );
+  });
+  it("testing the implemention of function findTheRange to return the low, high and range of an array of numbers", () => {
+    expect(typeof bundle.findTheRange).to.equal("function");
+    cy.wrap({ findTheRange: bundle.findTheRange })
+      .invoke("findTheRange", [7, 18, 3, 5, 9, 10])
+      .should("deep.equal", [3, 18, 15]);
+  });
 });
