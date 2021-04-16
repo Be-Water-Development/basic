@@ -58,7 +58,7 @@ describe("Functions part three testing", () => {
       ])
       .should("equal", "Keep searching!");
   });
-  it("testing the invocation of function endsWithS to return an array of strings that end with 's', the forEach method should be utilized", () => {
+  it("testing the invocation of function endsWithS to return an array of strings that end with 's'", () => {
     cy.wrap({ endsWithS: bundle.endsWithS })
       .invoke("endsWithS", [
         "lions",
@@ -70,16 +70,14 @@ describe("Functions part three testing", () => {
         "meerkat",
       ])
       .should("deep.equal", ["lions", "penguins", "snakes", "otters"]);
-    expect(bundle.endsWithS.toString()).to.include("forEach");
   });
-  it("testing the invoation of function y2K to locate the number 2000 inside the argument array, result variable should not be used", () => {
+  it("testing the invoation of function y2K to locate the number 2000 inside the argument array", () => {
     cy.wrap({ y2K: bundle.y2K })
       .invoke("y2K", [1999, 3000, 2400, 4700, 1800, 7000])
       .should("equal", "World still exists");
     cy.wrap({ y2K: bundle.y2K })
       .invoke("y2K", [1000, 2038, 2000, 1876, 1492, 1899])
       .should("equal", "It's the end of the world!");
-    expect(bundle.y2K.toString()).to.not.include("result");
   });
   it("testing the invocation of function addX to add parameter X to each array item, returning the updated array", () => {
     expect(typeof bundle.addX).to.equal("function");
