@@ -51,6 +51,23 @@ const lastLetter = (string) => string[string.length - 1];
 // console.log(lastLetter("salsa")); // a
 // console.log(lastLetter("guac!")); // !
 
+// Challenge continued
+
+// Convert the function below into ES6 arrow function syntax
+
+// Starter code to convert
+// function sunglasses(string) {
+//   return `I wear my sunglasses at ${string}`;
+// }
+
+const sunglasses = (string) => {
+  return `I wear my sunglasses at ${string}`;
+};
+
+// Uncomment below to check your work
+// console.log(typeof sunglasses); // function
+// console.log(sunglasses("night")); // I wear my sunglasses at night
+
 // Do not alter below this line
 export const bundle = {
   addTen: addTen,
@@ -58,4 +75,5 @@ export const bundle = {
   whatsUp: whatsUp,
   addTwoNums: addTwoNums,
   lastLetter: lastLetter,
+  sunglasses: sunglasses,
 };
