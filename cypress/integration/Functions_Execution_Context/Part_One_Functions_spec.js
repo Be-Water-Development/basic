@@ -29,4 +29,11 @@ describe("Part one functions testing", () => {
       .invoke("lastLetter", "AVOCADOS")
       .should("equal", "S");
   });
+  it("testing the conversion of function sunglasses to ES6 syntax", () => {
+    expect(typeof bundle.sunglasses).to.equal("function");
+    cy.wrap({ sunglasses: bundle.sunglasses })
+      .invoke("sunglasses", "night")
+      .should("equal", "I wear my sunglasses at night");
+    expect(bundle.sunglasses.toString()).to.not.include("function");
+  });
 });
