@@ -103,6 +103,9 @@ for (let property in items) {
   }
 }
 
+// Uncomment below to check your answers
+// console.log(found); // true
+
 // Challenge continued
 
 let objOfNums = { number: 22, anotherNumber: 5, numberAgain: 16, oneMore: 9 };
@@ -116,6 +119,9 @@ for (let property in objOfNums) {
     greaterThanFive.push(objOfNums[property]);
   }
 }
+
+// Uncomment below to check your answers
+// console.log(greaterThanFive); // [ 22, 16, 9 ]
 
 // Challenge continued
 
@@ -135,8 +141,6 @@ for (let i = 0; i < ages.length; i++) {
 }
 
 // Uncomment below to check your answers
-// console.log(found); // true
-// console.log(greaterThanFive); // [ 22, 16, 9 ]
 // console.log(ages); // [ 17, 25, 66, 42 ]
 // console.log(ageByFive); // true
 

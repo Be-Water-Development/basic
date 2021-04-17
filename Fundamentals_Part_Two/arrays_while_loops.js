@@ -26,6 +26,9 @@ while (countDown > 0) {
   countDown--;
 }
 
+// Uncomment below to check your answers
+// console.log(countDown); // 0
+
 // Challenge continued
 
 // Declare a variable numToAdd and a varaible sum, set them both equal to zero. Using a while loop, add the value of numToAdd to sum, while incrementing numToAdd by one on each loop.
@@ -40,7 +43,6 @@ while (numToAdd < 15) {
 }
 
 // Uncomment below to check your answers
-// console.log(countDown); // 0
 // console.log(sum); // 105
 
 //Do not alter below this line

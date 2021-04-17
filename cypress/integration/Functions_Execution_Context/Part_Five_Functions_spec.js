@@ -1,7 +1,7 @@
 import { bundle } from "../../../Functions_Execution_Context/Part_Five_Functions";
 
 describe("Functions part five testing", () => {
-  it("testing the implementation of function sumOfOddThings that returns two nested arrays", () => {
+  it("testing the invocation of function sumOfOddThings that returns two nested arrays", () => {
     expect(typeof bundle.sumOfOddThings).to.equal("function");
     cy.wrap({ sumOfOddThings: bundle.sumOfOddThings })
       .invoke("sumOfOddThings", [1, 2, 3, 4, 5], [6, 7, 8, 9, 10])
@@ -10,7 +10,7 @@ describe("Functions part five testing", () => {
         [6, 16, 8, 18, 10],
       ]);
   });
-  it("testing the implementation of function removeVowels", () => {
+  it("testing the invocation of function removeVowels", () => {
     expect(typeof bundle.removeVowels).to.equal("function");
     cy.wrap({ removeVowels: bundle.removeVowels })
       .invoke("removeVowels", "MT BACHELOR")
@@ -19,7 +19,7 @@ describe("Functions part five testing", () => {
       .invoke("removeVowels", "Mount Thielsen")
       .should("equal", "Mnt Thlsn");
   });
-  it("testing the implementation of function addPear to add key/value pair to object", () => {
+  it("testing the invocation of function addPear to add key/value pair to object", () => {
     expect(typeof bundle.addPear).to.equal("function");
     cy.wrap({ addPear: bundle.addPear })
       .invoke("addPear", {
@@ -34,7 +34,7 @@ describe("Functions part five testing", () => {
         pear: "green",
       });
   });
-  it("testing the implementation of function whereInTheWorld to find the key 'Carmen' and return the assoicated value", () => {
+  it("testing the invocation of function whereInTheWorld to find the key 'Carmen' and return the assoicated value", () => {
     expect(typeof bundle.whereInTheWorld).to.equal("function");
     cy.wrap({ whereInTheWorld: bundle.whereInTheWorld })
       .invoke("whereInTheWorld", {
@@ -52,7 +52,7 @@ describe("Functions part five testing", () => {
       })
       .should("equal", "Sandiego");
   });
-  it("testing the implementation of function buildArray to return the key, value number of times", () => {
+  it("testing the invocation of function buildArray to return the key, value number of times", () => {
     expect(typeof bundle.buildArray).to.equal("function");
     cy.wrap({ buildArray: bundle.buildArray })
       .invoke("buildArray", { turkey: 3, gobble: 2 })

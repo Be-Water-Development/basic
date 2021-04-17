@@ -67,6 +67,9 @@ if (num < 10) {
   result = num * 11;
 }
 
+// Uncomment the below to check your answers
+// console.log(result); // 88
+
 // Challenge continued
 
 const fizzbuzz = [];
@@ -90,6 +93,9 @@ for (let i = 1; i <= 20; i++) {
   }
 }
 
+// Uncomment the below to check your answers
+// console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
+
 // Challenge continued
 
 const isItEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -102,9 +108,7 @@ for (let i = 0; i < isItEven.length; i++) {
   }
 }
 
-//Uncomment the below to check your answers
-// console.log(result); // 88
-// console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
+// Uncomment the below to check your answers
 // console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
 
 // Do not alter below this line

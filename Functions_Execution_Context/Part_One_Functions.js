@@ -53,7 +53,7 @@ const lastLetter = (string) => string[string.length - 1];
 
 // Challenge continued
 
-// Convert the function below into ES6 arrow function syntax
+// Convert the function below into ES6 arrow function syntax.
 
 // Starter code to convert
 // function sunglasses(string) {
