@@ -11,6 +11,9 @@ for (let i = 0; i < 8; i++) {
   nestedSubarray.push([`iteration${i}, ${i}`]);
 }
 
+// Uncomment below to check your answer
+// console.log(nestedSubarray); // [['iteration0, 0'], ['iteration1, 1'], ['iteration2, 2'], ['iteration3, 3'], ['iteration4, 4'], ['iteration5, 5'], ['iteration6, 6'], ['iteration7, 7']]
+
 // Challenge continued
 
 // Using a for loop, iterate over the array animals. If the string inside animals starts with “s”, then add the string as the key and the index as the value to the object sStrings.
@@ -27,7 +30,10 @@ for (let i = 0; i < animals.length; i++) {
   }
 }
 
-//Challenge continued
+// Uncomment below to check your answer
+// console.log(sStrings); // { snake: 0, spider: 2, seal: 4 }
+
+// Challenge continued
 
 // Using a for… in loop, iterate over the object addThis. If the value in addThis is a number, add that number to the variable sum.
 
@@ -48,8 +54,6 @@ for (let prop in addThis) {
 }
 
 // Uncomment below to check your answer
-// console.log(nestedSubarray); // [['iteration0, 0'], ['iteration1, 1'], ['iteration2, 2'], ['iteration3, 3'], ['iteration4, 4'], ['iteration5, 5'], ['iteration6, 6'], ['iteration7, 7']]
-// console.log(sStrings); // { snake: 0, spider: 2, seal: 4 }
 // console.log(sum); // 18
 
 export const bundle = {

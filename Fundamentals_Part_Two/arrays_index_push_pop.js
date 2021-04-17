@@ -45,6 +45,11 @@ const cities = ["Portland", "Seattle", "Berkeley", "Reno", "Bend"];
 cities[2] = "San Francisco";
 const citiesLength = cities.length;
 
+// Uncomment below to check your answers
+// console.log(Array.isArray(cities)); // true
+// console.log(cities[2]); // San Francisco
+// console.log(citiesLength); // 5
+
 // Challenge continued
 
 const nums = [1, 2, 3, 4, 5, 6];
@@ -53,6 +58,9 @@ const nums = [1, 2, 3, 4, 5, 6];
 // Add code here
 
 nums.push(7);
+
+// Uncomment below to check your answers
+// console.log(nums); // [1, 2, 3, 4, 5, 6, 7]
 
 // Challenge continued
 
@@ -63,11 +71,7 @@ const moreNums = [11, 22, 33, 44, 55];
 
 moreNums.pop();
 
-//Uncomment below to check your answers
-// console.log(Array.isArray(cities)); // true
-// console.log(cities[2]); // San Francisco
-// console.log(citiesLength); // 5
-// console.log(nums); // [1, 2, 3, 4, 5, 6, 7]
+// Uncomment below to check your answers
 // console.log(moreNums); // [11, 22, 33, 44]
 
 //Do not alter below this line
