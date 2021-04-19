@@ -1,6 +1,6 @@
 import { bundle } from "../../../Higher_Order_Functions_and_Callbacks/Part_One_HOF_CB";
 
-describe("Higher order functions and callbacks testing", () => {
+describe("Higher order functions and callbacks testing, part one", () => {
   it("testing the invocation of function pastTense", () => {
     expect(typeof bundle.pastTense).to.equal("function");
     cy.wrap({ pastTense: bundle.pastTense })
@@ -14,7 +14,7 @@ describe("Higher order functions and callbacks testing", () => {
       .invoke("map", [1, 2, 3, 4], bundle.timesEleven)
       .should("deep.equal", [11, 22, 33, 44]);
   });
-  it("testing invocation of function mapTwo with forEach function as loop", () => {
+  it("testing invocation of function mapTwo and forEach", () => {
     expect(typeof bundle.mapTwo).to.equal("function");
     expect(typeof bundle.forEach).to.equal("function");
     cy.wrap({ forEach: bundle.forEach })
