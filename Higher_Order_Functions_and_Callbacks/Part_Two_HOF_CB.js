@@ -1,7 +1,6 @@
 // Challenge
 
-// Create a function mapMe that accepts an array and returns a new array.
-// The new array should contain all elements from the input array converted to uppercase.
+// Create a function mapMe that accepts an array and returns a new array. The new array should contain all elements from the input array converted to uppercase.
 // Utilize the built in map method to complete this challenge.
 
 const mapMe = (array) => {
@@ -21,7 +20,8 @@ const mapMe = (array) => {
 // Reduce iterates over the array and performs any operation that can be applied inside a function to each array element while keeping track of each iteration's
 // outcome with an accumulator value. Reduce takes four arguments:
 
-// 1. Accumulator value. The accumulator keeps track of the output for each iteration. It starts out equal to the initial value.
+// 1. Accumulator value. The accumulator keeps track of the output for each iteration. It starts out equal to the initial value. If no initial value is provided,
+// the accumulator defaults to array[0].
 // 2. Current value. The current value is the current element that is being iterated over in the loop.
 // 3. Current index.
 // 4. The original array.
@@ -124,6 +124,45 @@ const duplicates = (arrays) => {
 //   ])
 // ); // [1, 33, 56, 8, 99, 100, 22, 15, 47, 44, 87]
 
+// Challenge continued
+
+// Create a function matchMe that accepts two arrays and a callback. matchMe will return an object.
+// If invoking callback on the first array element is equal to the second array element at the same index,
+// add the first array element as the key, and the second array element as the value.
+
+const matchMe = (arr1, arr2, cb) => {
+  return arr1.reduce((acc, item, index) => {
+    if (cb(item) === arr2[index]) {
+      acc[item] = arr2[index];
+    }
+    return acc;
+  }, {});
+};
+
+// Uncomment below to check your work
+// console.log(typeof matchMe) // function
+// const array1 = ["pancakes", "bacon", "juice", "eggs", "toast"];
+// const array2 = ["PANCAKES", "BACON", "juice", "EGGS", "toast"];
+// console.log(matchMe(array1, array2, (s) => s.toUpperCase())); // { pancakes: 'PANCAKES', bacon: 'BACON', eggs: 'EGGS' }
+
+// Challenge continued
+
+// Create a function arrIntoObj that accepts an array and a callback as arguments. arrIntoObj should return an object that has the array element as a key,
+// and the result of invoking the callback on the array element as the value.
+
+const arrIntoObj = (arr, cb) => {
+  return arr.reduce((acc, item) => {
+    acc[item] = cb(item);
+    return acc;
+  }, {});
+};
+
+// Uncomment below to check your work
+// console.log(typeof arrIntoObj); // function;
+// console.log(
+//   arrIntoObj(["ORANGE", "PINEAPPLE", "MANGO"], (s) => s.toLowerCase())
+// ); // { ORANGE: 'orange', PINEAPPLE: 'pineapple', MANGO: 'mango' }
+
 // Do not alter below this line
 export const bundle = {
   mapMe: mapMe,
@@ -131,4 +170,6 @@ export const bundle = {
   reduceMe: reduceMe,
   crossRoads: crossRoads,
   duplicates: duplicates,
+  matchMe: matchMe,
+  arrIntoObj: arrIntoObj,
 };
