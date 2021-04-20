@@ -45,4 +45,31 @@ describe("Higher order functions and callbacks testing, part two", () => {
       ])
       .should("deep.equal", [1, 33, 56, 8, 99, 100, 22, 15, 47, 44, 87]);
   });
+  it("testing the invocation of function matchMe to return an object", () => {
+    expect(typeof bundle.matchMe).to.equal("function");
+    cy.wrap({ matchMe: bundle.matchMe })
+      .invoke(
+        "matchMe",
+        ["pancakes", "bacon", "juice", "eggs", "toast"],
+        ["PANCAKES", "BACON", "juice", "EGGS", "toast"],
+        (s) => s.toUpperCase()
+      )
+      .should("deep.equal", {
+        pancakes: "PANCAKES",
+        bacon: "BACON",
+        eggs: "EGGS",
+      });
+  });
+  it("testing the invocation of function arrIntoObj to return an object", () => {
+    expect(typeof bundle.arrIntoObj).to.equal("function");
+    cy.wrap({ arrIntoObj: bundle.arrIntoObj })
+      .invoke("arrIntoObj", ["ORANGE", "PINEAPPLE", "MANGO"], (s) =>
+        s.toLowerCase()
+      )
+      .should("deep.equal", {
+        ORANGE: "orange",
+        PINEAPPLE: "pineapple",
+        MANGO: "mango",
+      });
+  });
 });
