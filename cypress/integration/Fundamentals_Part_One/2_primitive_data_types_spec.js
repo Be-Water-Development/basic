@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_One/primitive_data_types";
+import { bundle } from "../../../Fundamentals_Part_One/2_primitive_data_types";
 
 describe("Primitive Data Types testing", () => {
   it("testing birthCity is indeed a string", () => {

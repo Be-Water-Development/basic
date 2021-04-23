@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_One/numbers_incrementor_decrementor";
+import { bundle } from "../../../Fundamentals_Part_One/9_numbers_incrementor_decrementor";
 
 describe("Incrementor and decrementor testing", () => {
   it("testing the use of the increment operator to add 1 to 4 to equal 5", () => {

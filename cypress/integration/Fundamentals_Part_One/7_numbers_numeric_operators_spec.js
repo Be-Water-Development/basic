@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_One/numbers_numeric_operators";
+import { bundle } from "../../../Fundamentals_Part_One/7_numbers_numeric_operators";
 
 describe("Numeric Operators testing", () => {
   it("testing the creation of varaible oneHundred equal to 100", () => {

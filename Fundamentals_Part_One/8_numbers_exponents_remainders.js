@@ -16,8 +16,8 @@
 // console.log(7 % 3); // returns 1, since 3 goes into 7 twice, leaving a remainder of 1
 // console.log(3 % 4); // returns 3, since 3 is smaller than 4, it cannot divide into 4, so the remainder is 3
 
-//A common implementation of the remainder operator is determining if a number is even or odd. If a number is divisible by 2, leaving a remainder of 0, then it is
-//even. If the remainder is 1, then it is not divisible by 2, and is odd.
+// A common implementation of the remainder operator is determining if a number is even or odd. If a number is divisible by 2, leaving a remainder of 0, then it is
+// even. If the remainder is 1, then it is not divisible by 2, and is odd.
 
 // console.log(36 % 2); // returns 0, so it is even
 // console.log(5 % 2); // return 1, so it is odd.

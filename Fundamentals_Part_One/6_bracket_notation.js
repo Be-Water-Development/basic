@@ -46,10 +46,10 @@ const firstChar = joke[0];
 const tenthChar = joke[9];
 const lastChar = answer[answer.length - 1];
 
-//Uncomment below to check your answers
+// Uncomment below to check your answers
 // console.log(firstChar); // "w"
 // console.log(tenthChar); // "h"
 // console.log(lastChar); // "s"
 
-//Do not alter below this line
+// Do not alter below this line
 export const bundle = { first: firstChar, tenth: tenthChar, last: lastChar };

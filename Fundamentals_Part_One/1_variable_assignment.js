@@ -1,3 +1,5 @@
+//NOTE: Please read the file Variables_and_Constants before completing this challenge.
+
 // Directions:
 // create three types variables:
 // a var, a let and const
@@ -12,5 +14,4 @@ let array = ["a", "b", "c"];
 const object = { num: number, arr: array };
 
 // Do not alter below this line
-const bundle = { num: number, arr: array, obj: object };
-export { bundle };
+export const bundle = { num: number, arr: array, obj: object };
