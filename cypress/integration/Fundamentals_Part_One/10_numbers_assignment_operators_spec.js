@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_One/numbers_assignment_operators";
+import { bundle } from "../../../Fundamentals_Part_One/10_numbers_assignment_operators";
 
 describe("Assignment operators testing", () => {
   it("testing the use of the addition assigment operator on the varaible numToAdd to equal 32", () => {

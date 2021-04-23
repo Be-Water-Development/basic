@@ -12,7 +12,7 @@
 // const myString = "Hello";
 // console.log(myString.length); // => 5
 
-// Pretty simple huh? You add .length to the end of your variable, and the length is returned.
+// Pretty simple! You add .length to the end of your variable, and the length is returned.
 
 // String methods are the actions that can be performed on objects in JavaScript. Remember, every data type in Javascript is inherently an object,
 // and every data type comes with it’s own set of methods.
@@ -38,7 +38,7 @@ let soccerChant = "Green is the Color";
 
 let count = soccerTeam.length;
 let upper = soccerChant.toUpperCase();
-let lower = soccerChant.toLocaleLowerCase();
+let lower = soccerChant.toLowerCase();
 
 //Uncomment below to check your answers
 // console.log(count); // 16

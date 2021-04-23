@@ -76,5 +76,40 @@ const amITrue = (arr, cb1, cb2) => {
 //   )
 // ); // false
 
+// Challenge continued
+
+// Create a function sortMe that accepts an array and a callback. The callback will return a boolean. sortMe should iterate through the array,
+// and pass each array item through a callback. sortMe will return a new array, and array elements that return a true value should come first in the array,
+// and the array elements that return a false value should come second.
+
+const sortMe = (arr, cb) => {
+  const t = [];
+  const f = [];
+
+  arr.forEach((ele) => {
+    if (cb(ele) === true) {
+      t.push(ele);
+    }
+    if (cb(ele) === false) {
+      f.push(ele);
+    }
+  });
+
+  return t.concat(f);
+};
+
+// Uncomment below to check your work
+console.log(typeof sortMe); // function
+console.log(
+  sortMe(
+    ["spider", "avocados", "panther", "antelope", "cheetah", "aardvark"],
+    (s) => s.toLowerCase().startsWith("a")
+  )
+); // [ 'avocados', 'antelope', 'aardvark', 'spider', 'panther', 'cheetah' ]
+
 // Do not alter below this line
-export const bundle = { messOfArrays: messOfArrays, amITrue: amITrue };
+export const bundle = {
+  messOfArrays: messOfArrays,
+  amITrue: amITrue,
+  sortMe: sortMe,
+};

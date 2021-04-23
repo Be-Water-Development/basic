@@ -1,0 +1,54 @@
+What var this? 
+
+Defining and manipulating data is the cornerstone of programming. Without the ability to store and manipulate data, programming would cease to exist. 
+In Javascript, data is stored inside variables. Variables are containers that store reusable data, and can be defined with keywords that are built into javascript. 
+There are three types of variables, var, let and const. Var and let can be changed, while const stands for a constant, unchangeable variable. 
+
+Var
+
+Javascript has many different values that can be stored inside a variable. An example would be numbers, strings and true/false values(called booleans). 
+Here is how you create a variable: 
+
+var favoriteAnimal = “lizards”
+
+You create a variable with the var keyword, then create a name for that variable, in this case, favoriteAnimal. A common naming technique in Javascript is camelCasing,
+which separates words with a capital letter, likeThis. Then, you use the assignment operator(=) to assign the value on the right hand side to the name favoriteAnimal. 
+So favoriteAnimal holds the value “lizards”.
+
+You can reassign the value of favoriteAnimal since it was declared with a var(this is the same for let variables). Here is an example: 
+var favoriteFood = “strawberries” 
+console.log(favoriteFood) // strawberries 
+favoriteFood = “bacon”
+console.log(favoriteFood) // “bacon” 
+
+Quick side note, a console.log is a way to see what is happening under the hood in Javascript. It prints the output to your terminal. 
+The “// strawberries” is a signal that the return value will be strawberries. The // is a commented out line of code, you’ll see this in action later. 
+
+Okay we are back, the value of favoriteFood is reassigned to “bacon” since var can be changed by reassigning the value. Notice how var is not declared again when the value is changed, 
+since it was already created and stored in memory on the first declaration. The value of “bacon” will persist until the variable is changed again. 
+
+let and const 
+
+let and const were introduced in the release of ECMAScript 2015 or ES6. It is best practice to only use let and const to declare variables. 
+While var will still work, there are implications relating to scope when using var. You’ll learn about that later, but for now, use let and const. 
+
+let operates similarly to var, and its value can be reassigned. const stands for a constant variable, and cannot be reassigned. Here is an example: 
+
+const pet = “cat” 
+
+pet = “dog” // TypeError! Assignment to constant variable 
+
+Naming conventions: 
+
+Variable names are case sensitive. x and X will refer to two separate variables stored in memory. 
+
+Variable names should begin with a lowercase letter. 
+
+Variable names cannot begin with a number. 
+
+Variable names cannot contain symbols.
+
+camelCasing variable names is a best practice. 
+
+
+

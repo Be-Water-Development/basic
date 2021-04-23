@@ -24,19 +24,19 @@ let numToSubtract = 15;
 let numToMultiply = 7;
 let numToDivide = 8;
 
-//Add code here with an assignment operator to reassign the value of numToAdd to the current value plus 10
+// Add code here with an assignment operator to reassign the value of numToAdd to the current value plus 10
 
 numToAdd += 10;
 
-//Add code here with an assignment operator to reassign the value of numToSubtract to the current value minus 8
+// Add code here with an assignment operator to reassign the value of numToSubtract to the current value minus 8
 
 numToSubtract -= 8;
 
-//Add code here with an assignment operator to reassign the value to numToMultiply to the current value times 10
+// Add code here with an assignment operator to reassign the value to numToMultiply to the current value times 10
 
 numToMultiply *= 10;
 
-//Add code here with an assignment operator to reassign the value to numToDivide to the current value divided by 2
+// Add code here with an assignment operator to reassign the value to numToDivide to the current value divided by 2
 
 numToDivide /= 2;
 

@@ -1,11 +1,13 @@
-import { bundle } from "../../../Fundamentals_Part_One/comparison_operators";
+import { bundle } from "../../../Fundamentals_Part_One/11_comparison_operators";
 
 describe("Comparison operators testing", () => {
-  it("testing the creating of the varaible smallNum of type number", () => {
+  it("testing the creating of the varaible smallNum to equal 5", () => {
     expect(typeof bundle.smallNum).to.equal("number");
+    expect(bundle.smallNum).to.equal(5);
   });
-  it("testing the creating of the varaible bigNum of type number", () => {
+  it("testing the creating of the varaible bigNum to equal 10", () => {
     expect(typeof bundle.bigNum).to.equal("number");
+    expect(bundle.bigNum).to.equal(10);
   });
   it("testing the comparison of bigNum being greater than smallNum", () => {
     expect(bundle.isBigger).to.equal(true);

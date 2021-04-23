@@ -44,10 +44,10 @@ const stringOrNum = 5 + 5 + "5" + 5;
 
 // Challenge continued
 
-//Declare a variable favFoodType. Using the typeof operator, assign it the value of favFood’s data type.
-//Declare a variable timesEatenType. Using the typeof operator, assign it the value of timesEaten’s data type.
-//Declare a variable eatAgainType. Using the typeof operator, assign it the value of eatAgain’s data type.
-//Declare a variable ripeProgressionArray. Using the Array.isArray() method, assign it the value of determining if ripeProgression is an array.
+// Declare a variable favFoodType. Using the typeof operator, assign it the value of favFood’s data type.
+// Declare a variable timesEatenType. Using the typeof operator, assign it the value of timesEaten’s data type.
+// Declare a variable eatAgainType. Using the typeof operator, assign it the value of eatAgain’s data type.
+// Declare a variable ripeProgressionArray. Using the Array.isArray() method, assign it the value of determining if ripeProgression is an array.
 
 const favFood = "Avocados";
 const timesEaten = 1298;
@@ -61,7 +61,7 @@ const timesEatenType = typeof timesEaten;
 const eatAgainType = typeof eatAgain;
 const ripeProgressionArray = Array.isArray(ripeProgression);
 
-//Uncomment below to check your answers
+// Uncomment below to check your answers
 // console.log(favFoodType); // "string"
 // console.log(timesEatenType); // "number"
 // console.log(eatAgainType); // "boolean"

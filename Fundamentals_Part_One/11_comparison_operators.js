@@ -38,7 +38,7 @@ let likesBears = false; // notice no quotes
 // console.log(false == false); // true
 // console.log("false" == false); // false
 
-//Strictly equal requires values to have the same value and the same data type. Here is an example:
+// Strictly equal requires values to have the same value and the same data type. Here is an example:
 
 // console.log(2 === 2); // true
 // console.log(2 === "2"); // false

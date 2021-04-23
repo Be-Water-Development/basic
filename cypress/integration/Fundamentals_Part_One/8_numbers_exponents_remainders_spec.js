@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_One/numbers_exponents_remainders";
+import { bundle } from "../../../Fundamentals_Part_One/8_numbers_exponents_remainders";
 
 describe("Exponents and operators testing", () => {
   it("testing the creating of the varaible sixSquared equal to 36", () => {
