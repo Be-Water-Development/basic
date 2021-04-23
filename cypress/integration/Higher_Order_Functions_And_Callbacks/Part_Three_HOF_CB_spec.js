@@ -1,8 +1,10 @@
 import { bundle } from "../../../Higher_Order_Functions_and_Callbacks/Part_Three_HOF_CB";
 
-describe("Higher order functions and callbacks testing, part three", () => {
-  it("testing the invocation of function messOfArrays to return an object", () => {
+describe("testing function messOfArrays", () => {
+  it("messOfArrays is of type function", () => {
     expect(typeof bundle.messOfArrays).to.equal("function");
+  });
+  it("the invocation of function messOfArrays to equal an object", () => {
     cy.wrap({ messOfArrays: bundle.messOfArrays })
       .invoke(
         "messOfArrays",
@@ -21,8 +23,13 @@ describe("Higher order functions and callbacks testing, part three", () => {
         Sheep: ["SHEEP", "sheep", "Sheep 5", "p"],
       });
   });
-  it("testing the invocation of function amITrue to return a boolean", () => {
+});
+
+describe("testing function amITrue", () => {
+  it("amITrue is of type function", () => {
     expect(typeof bundle.amITrue).to.equal("function");
+  });
+  it("the invocation of function amITrue to equal a boolean", () => {
     cy.wrap({ amITrue: bundle.amITrue })
       .invoke(
         "amITrue",
