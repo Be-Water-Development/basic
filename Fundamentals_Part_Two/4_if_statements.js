@@ -34,7 +34,7 @@ const lotteryNum = 7;
 
 // Here we are going to introduce the concept of code smell. As you learn more about coding, you will learn there are best practices, and there are ways of coding that can leave a smell behind.
 // While both ways of writing out code can be correct, one is vastly preferred in the industry over the other. An example of using bad code smell is else and if else statements.
-// You should rarely, if ever, use else or if else statements. All of the same code above can be accomplished without and else or if else statement and a good code smell.
+// You should rarely, if ever, use else or if else statements. All of the same code above can be accomplished without and else or if else statement.
 // Here is an example:
 
 //Uncomment the code below

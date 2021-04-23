@@ -1,11 +1,18 @@
-import { bundle } from "../../../Fundamentals_Part_Two/arrays_index_push_pop";
+import { bundle } from "../../../Fundamentals_Part_Two/1_array_fundamentals";
 
-describe("Array index and pop and push methods testing", () => {
+describe("Array fundamentals testing", () => {
   it("Testing the creating of the cities array", () => {
     expect(Array.isArray(bundle.cities)).to.equal(true);
   });
   it("Testing the reassignment of value at index 2 of cities array to equal 'San Francisco'", () => {
     expect(bundle.cities[2]).to.equal("San Francisco");
+    expect(bundle.cities).to.eql([
+      "Portland",
+      "Seattle",
+      "San Francisco",
+      "Reno",
+      "Bend",
+    ]);
   });
   it("Testing the creating of the citiesLength varaible to equal 5", () => {
     expect(bundle.citiesLength).to.equal(5);

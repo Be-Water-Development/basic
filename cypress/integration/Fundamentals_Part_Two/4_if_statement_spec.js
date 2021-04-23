@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_Two/if_statements";
+import { bundle } from "../../../Fundamentals_Part_Two/4_if_statements";
 
 describe("If statements control flow testing", () => {
   it("testing the implementation of if statements to assign the value of result to 88", () => {

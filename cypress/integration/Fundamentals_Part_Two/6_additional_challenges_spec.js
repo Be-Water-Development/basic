@@ -1,4 +1,4 @@
-import { bundle } from "../../../Fundamentals_Part_Two/additional_challenges";
+import { bundle } from "../../../Fundamentals_Part_Two/6_additional_challenges";
 
 describe("Additional array and object challenges testing", () => {
   it("testing the implementation of a for loop to add nested subarrays to an array", () => {
@@ -13,7 +13,7 @@ describe("Additional array and object challenges testing", () => {
       ["iteration7, 7"],
     ]);
   });
-  it("testing the implementation of a for loop and string method startsWith('s') to add to sStrings object with string as key, index as value", () => {
+  it("testing the implementation of a for loop and string method startsWith() to add to sStrings object", () => {
     expect(bundle.sStrings).to.eql({ snake: 0, spider: 2, seal: 4 });
   });
   it("testing the implementation of a for.. in loop to iterate over addThis and sum the values of type number to varaible sum", () => {

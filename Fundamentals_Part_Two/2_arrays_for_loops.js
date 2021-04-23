@@ -56,9 +56,10 @@ for (let i = 0; i < fruits.length; i++) {
 
 // Challenge
 
+// Using a for loop, take the variable countToTen and increase it by 1 on each iteration, until countToTen is equal to 10.
+
 let countToTen = 0;
 
-// Using a for loop, take the variable countToTen and increase it by 1 on each iteration, until countToTen is equal to 10.
 // Add code here
 
 for (let i = 0; i < 10; i++) {
@@ -71,9 +72,10 @@ for (let i = 0; i < 10; i++) {
 // Challenge continued
 
 // Using a for loop, loop over the nums array, multiplying each number by 11 on each iteration.
-// Add code here
 
 const nums = [1, 2, 3, 4, 5, 6];
+
+// Add code here
 
 for (let i = 0; i < nums.length; i++) {
   nums[i] *= 11;
@@ -109,8 +111,8 @@ const attraction = [
 
 const nationalParks = [];
 
-//Each array above(park, location and attraction) correspond to each other at a certain index. Loop through the arrays and push a string into nationalParks so that
-//nationalParks returns the following:
+// Each array above(park, location and attraction) correspond to each other at a certain index. Loop through the arrays and push a string into nationalParks so that
+// nationalParks returns the following:
 // [
 //   'Glacier National Park is in Montana and attractions are 700 miles of hiking trails',
 //   'Yellowstone National Park is in Wyoming and attractions are hot springs and geysers',
@@ -124,7 +126,7 @@ for (let i = 0; i < park.length; i++) {
   );
 }
 
-//Uncomment below to check your answers
+// Uncomment below to check your answers
 // console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
 
 //Do not alter below this line

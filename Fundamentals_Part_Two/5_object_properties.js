@@ -55,11 +55,11 @@ const myPetsKeys = Object.keys(myPets);
 // bird
 // fish
 
-// Another way to iterate over an object is with a for... in loop. A for... in loop loops through the properties(keys) of an object.
+// Another way to iterate over an object is with a for... in loop. A for... in loop iterates through the properties(keys) of an object.
 // Here is an example:
 
 const myShoppingList = {
-  item1: "avocaods",
+  item1: "avocados",
   item2: "bread",
   item3: "milk",
 };
@@ -74,9 +74,9 @@ const myShoppingList = {
 //   );
 // }
 
-//The above for... in loop returns:
+// The above for... in loop returns:
 // property is the key: item1
-// myShoppingList[property] is the value: avocaods
+// myShoppingList[property] is the value: avocados
 // property is the key: item2
 // myShoppingList[property] is the value: bread
 // property is the key: item3
