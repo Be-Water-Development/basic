@@ -129,10 +129,9 @@ const buildArray = (obj) => {
 // Create a function endOfUnit that returns the string “Congrats, you completed the functions unit!”. Now, convert this function to an anonymous function expression
 // and assign it to a variable called theEnd. An invocation of theEnd should return the return value from endOfUnit.
 
-const endOfUnit = () => {
+const theEnd = function endOfUnit() {
   return "Congrats, you completed the functions unit!";
 };
-const theEnd = endOfUnit;
 
 // Uncomment below to check your work
 // console.log(typeof theEnd); // function

@@ -90,7 +90,7 @@ function endsWithS(array) {
   let result = [];
   //Add code here
   array.forEach((ele) => {
-    if (ele.endsWith("s")) {
+    if (ele.toLowerCase().endsWith("s")) {
       result.push(ele);
     }
   });

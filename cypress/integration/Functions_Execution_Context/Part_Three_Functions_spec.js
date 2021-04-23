@@ -1,8 +1,10 @@
 import { bundle } from "../../../Functions_Execution_Context/Part_Three_Functions";
 
-describe("Functions part three testing", () => {
-  it("testing the invocation of function sunshine to return the appropriate string based in arugment hour", () => {
+describe("testing function sunshine ", () => {
+  it("sunshine is of type function", () => {
     expect(typeof bundle.sunshine).to.equal("function");
+  });
+  it("the invocation of function sunshine to equal the appropriate string based in arugment hour", () => {
     cy.wrap({ sunshine: bundle.sunshine })
       .invoke("sunshine", 4)
       .should("equal", "Sun will rise soon");
@@ -19,8 +21,13 @@ describe("Functions part three testing", () => {
       .invoke("sunshine", 24)
       .should("equal", "Sun is setting");
   });
-  it("testing the invocation of function getGrade to return the appropriate grade based on argument grade", () => {
+});
+
+describe("testing function getGrade", () => {
+  it("getGrade is of type function", () => {
     expect(typeof bundle.getGrade).to.equal("function");
+  });
+  it("the invocation of function getGrade to equal string grade", () => {
     cy.wrap({ getGrade: bundle.getGrade })
       .invoke("getGrade", 96)
       .should("equal", "A");
@@ -37,7 +44,13 @@ describe("Functions part three testing", () => {
       .invoke("getGrade", 55)
       .should("equal", "F");
   });
-  it("testing the invocation of function treasure to locate the string 'treasure' inside the argument array", () => {
+});
+
+describe("testing function treasure", () => {
+  it("treasure is of type function", () => {
+    expect(typeof bundle.treasure).to.equal("function");
+  });
+  it("the invocation of function treasure to equal string 'Treasure found!' or 'Keep searching!'", () => {
     cy.wrap({ treasure: bundle.treasure })
       .invoke("treasure", [
         "turtles",
@@ -58,7 +71,13 @@ describe("Functions part three testing", () => {
       ])
       .should("equal", "Keep searching!");
   });
-  it("testing the invocation of function endsWithS to return an array of strings that end with 's'", () => {
+});
+
+describe("testing function endsWithS ", () => {
+  it("endsWithS is of type function", () => {
+    expect(typeof bundle.endsWithS).to.equal("function");
+  });
+  it("the invocation of function endsWithS to equal array with strings that end with 's'", () => {
     cy.wrap({ endsWithS: bundle.endsWithS })
       .invoke("endsWithS", [
         "lions",
@@ -71,7 +90,13 @@ describe("Functions part three testing", () => {
       ])
       .should("deep.equal", ["lions", "penguins", "snakes", "otters"]);
   });
-  it("testing the invoation of function y2K to locate the number 2000 inside the argument array", () => {
+});
+
+describe("testing function y2K", () => {
+  it("y2K is of type function", () => {
+    expect(typeof bundle.y2K).to.equal("function");
+  });
+  it("the invoation of function y2K to equal string 'World still exists' or 'It's the end of the world!'", () => {
     cy.wrap({ y2K: bundle.y2K })
       .invoke("y2K", [1999, 3000, 2400, 4700, 1800, 7000])
       .should("equal", "World still exists");
@@ -79,8 +104,13 @@ describe("Functions part three testing", () => {
       .invoke("y2K", [1000, 2038, 2000, 1876, 1492, 1899])
       .should("equal", "It's the end of the world!");
   });
-  it("testing the invocation of function addX to add parameter X to each array item, returning the updated array", () => {
+});
+
+describe("testing function addX", () => {
+  it("addX is of type function", () => {
     expect(typeof bundle.addX).to.equal("function");
+  });
+  it("the invocation of function addX to equal array with each element incremented by x", () => {
     cy.wrap({ addX: bundle.addX })
       .invoke("addX", [1, 2, 3, 4], 2)
       .should("deep.equal", [3, 4, 5, 6]);
