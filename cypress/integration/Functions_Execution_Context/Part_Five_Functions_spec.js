@@ -1,8 +1,10 @@
 import { bundle } from "../../../Functions_Execution_Context/Part_Five_Functions";
 
-describe("Functions part five testing", () => {
-  it("testing the invocation of function sumOfOddThings that returns two nested arrays", () => {
+describe("testing function sumOfOddThings", () => {
+  it("sumOfOddThings is of type function", () => {
     expect(typeof bundle.sumOfOddThings).to.equal("function");
+  });
+  it("the invocation of function sumOfOddThings to equal two nested arrays", () => {
     cy.wrap({ sumOfOddThings: bundle.sumOfOddThings })
       .invoke("sumOfOddThings", [1, 2, 3, 4, 5], [6, 7, 8, 9, 10])
       .should("deep.equal", [
@@ -10,8 +12,13 @@ describe("Functions part five testing", () => {
         [6, 16, 8, 18, 10],
       ]);
   });
-  it("testing the invocation of function removeVowels", () => {
+});
+
+describe("testing function removeVowels", () => {
+  it("removeVowels is of type function", () => {
     expect(typeof bundle.removeVowels).to.equal("function");
+  });
+  it("the invocation of function removeVowels to equal string without vowels", () => {
     cy.wrap({ removeVowels: bundle.removeVowels })
       .invoke("removeVowels", "MT BACHELOR")
       .should("equal", "MT BCHLR");
@@ -19,8 +26,13 @@ describe("Functions part five testing", () => {
       .invoke("removeVowels", "Mount Thielsen")
       .should("equal", "Mnt Thlsn");
   });
-  it("testing the invocation of function addPear to add key/value pair to object", () => {
+});
+
+describe("testing function addPear", () => {
+  it("addPear is of type function", () => {
     expect(typeof bundle.addPear).to.equal("function");
+  });
+  it("the invocation of function addPear to equal object with key/value pair added", () => {
     cy.wrap({ addPear: bundle.addPear })
       .invoke("addPear", {
         strawberry: "red",
@@ -34,8 +46,13 @@ describe("Functions part five testing", () => {
         pear: "green",
       });
   });
-  it("testing the invocation of function whereInTheWorld to find the key 'Carmen' and return the assoicated value", () => {
+});
+
+describe("testing function whereInTheWorld", () => {
+  it("whereInTheWorld is of type function", () => {
     expect(typeof bundle.whereInTheWorld).to.equal("function");
+  });
+  it("the invocation of function whereInTheWorld to equal the value assoicated with the key 'Carmen'", () => {
     cy.wrap({ whereInTheWorld: bundle.whereInTheWorld })
       .invoke("whereInTheWorld", {
         Elvis: "Presley",
@@ -52,8 +69,13 @@ describe("Functions part five testing", () => {
       })
       .should("equal", "Sandiego");
   });
-  it("testing the invocation of function buildArray to return the key, value number of times", () => {
+});
+
+describe("testing function buildArray", () => {
+  it("buildArray is of type function", () => {
     expect(typeof bundle.buildArray).to.equal("function");
+  });
+  it("the invocation of function buildArray to equal key, value number of times", () => {
     cy.wrap({ buildArray: bundle.buildArray })
       .invoke("buildArray", { turkey: 3, gobble: 2 })
       .should("deep.equal", ["turkey", "turkey", "turkey", "gobble", "gobble"]);
@@ -61,8 +83,13 @@ describe("Functions part five testing", () => {
       .invoke("buildArray", {})
       .should("deep.equal", []);
   });
-  it("testing the assignment of funtion endOfUnit to the variable theEnd", () => {
+});
+
+describe("testing function endOfUnit and anonymous function expression theEnd", () => {
+  it("theEnd is of type function", () => {
     expect(typeof bundle.theEnd).to.equal("function");
+  });
+  it("the invocation of variable theEnd to equal the invocation of function endOfUnit", () => {
     cy.wrap({ theEnd: bundle.theEnd })
       .invoke("theEnd")
       .should("equal", "Congrats, you completed the functions unit!");
