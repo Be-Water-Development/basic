@@ -99,17 +99,51 @@ const sortMe = (arr, cb) => {
 };
 
 // Uncomment below to check your work
-console.log(typeof sortMe); // function
-console.log(
-  sortMe(
-    ["spider", "avocados", "panther", "antelope", "cheetah", "aardvark"],
-    (s) => s.toLowerCase().startsWith("a")
-  )
-); // [ 'avocados', 'antelope', 'aardvark', 'spider', 'panther', 'cheetah' ]
+// console.log(typeof sortMe); // function
+// console.log(
+//   sortMe(
+//     ["spider", "avocados", "panther", "antelope", "cheetah", "aardvark"],
+//     (s) => s.toLowerCase().startsWith("a")
+//   )
+// ); // [ 'avocados', 'antelope', 'aardvark', 'spider', 'panther', 'cheetah' ]
+
+// Challenge continued
+
+// Create a function byFive that accepts an array and a callback and returns an object. byFive will iterate through the array and invoke the
+// callback for each array element. The return object will consist of the return value from the callback as keys, and thevalue will be the
+// number of times that return value was returned from the callback.
+
+const byFive = (arr, cb) => {
+  return arr.reduce((acc, item) => {
+    acc[cb(item)] = (acc[cb(item)] || 0) + 1;
+    return acc;
+  }, {});
+};
+
+// Uncomment below to check your work. Look up ternary operators to find out what's happening in the callback.
+// const divisibleByFive = (num) => (num % 5 === 0 ? "fives" : "others");
+// console.log(byFive([1, 8, 30, 35, 17, 85, 5, 100], divisibleByFive)); // { others: 3, fives: 5 }
+
+// Challenge continued
+
+// Create a function groupMe that accepts an array and a callback and returns an object. groupMe will iterate through the array
+// and invoke the callback for each array element. The object will consist of the return value from the callback as the key.
+// The value will be an array containing all of the original passed in elements that resulted in the key when invoked with the callback.
+
+// const groupMe = (arr, cb) => {
+//   return arr.reduce((acc, item) => {
+
+//   }, {})
+// }
+
+// Uncomment below to check your work
+// const rounded = (num) => Math.round(num);
+// console.log(groupMe([2.2, 3.4, 2.1, 3.3, 3.1], rounded));
 
 // Do not alter below this line
 export const bundle = {
   messOfArrays: messOfArrays,
   amITrue: amITrue,
   sortMe: sortMe,
+  byFive: byFive,
 };
