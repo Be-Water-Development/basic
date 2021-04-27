@@ -56,3 +56,38 @@ describe("testing function amITrue", () => {
       .should("equal", false);
   });
 });
+
+describe("testing function sortMe", () => {
+  it("sortMe is of type function", () => {
+    expect(typeof bundle.sortMe).to.equal("function");
+  });
+  it("the invocation of function sortMe to return a sorted array", () => {
+    cy.wrap({ sortMe: bundle.sortMe })
+      .invoke(
+        "sortMe",
+        ["spider", "avocados", "panther", "antelope", "cheetah", "aardvark"],
+        (s) => s.toLowerCase().startsWith("a")
+      )
+      .should("deep.equal", [
+        "avocados",
+        "antelope",
+        "aardvark",
+        "spider",
+        "panther",
+        "cheetah",
+      ]);
+  });
+});
+
+describe("testing function byFive", () => {
+  it("byFive is of type function", () => {
+    expect(typeof bundle.byFive).to.equal("function");
+  });
+  it("the invocation of function byFive to equal an object", () => {
+    cy.wrap({ byFive: bundle.byFive })
+      .invoke("byFive", [1, 8, 30, 35, 17, 85, 5, 100], (num) =>
+        num % 5 === 0 ? "fives" : "others"
+      )
+      .should("deep.equal", { others: 3, fives: 5 });
+  });
+});
