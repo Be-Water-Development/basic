@@ -121,6 +121,7 @@ const byFive = (arr, cb) => {
 };
 
 // Uncomment below to check your work. Look up ternary operators to find out what's happening in the callback.
+// console.log(typeof byFive) // function
 // const divisibleByFive = (num) => (num % 5 === 0 ? "fives" : "others");
 // console.log(byFive([1, 8, 30, 35, 17, 85, 5, 100], divisibleByFive)); // { others: 3, fives: 5 }
 
@@ -130,15 +131,57 @@ const byFive = (arr, cb) => {
 // and invoke the callback for each array element. The object will consist of the return value from the callback as the key.
 // The value will be an array containing all of the original passed in elements that resulted in the key when invoked with the callback.
 
-// const groupMe = (arr, cb) => {
-//   return arr.reduce((acc, item) => {
-
-//   }, {})
-// }
+const groupMe = (arr, cb) => {
+  return arr.reduce((acc, item) => {
+    if (acc[cb(item)]) {
+      acc[cb(item)].push(item);
+    }
+    if (!acc[cb(item)]) {
+      acc[cb(item)] = [item];
+    }
+    return acc;
+  }, {});
+};
 
 // Uncomment below to check your work
 // const rounded = (num) => Math.round(num);
-// console.log(groupMe([2.2, 3.4, 2.1, 3.3, 3.1], rounded));
+// console.log(typeof groupMe) // function
+// console.log(groupMe([2.1, 3.1, 2.2, 3.3, 3.4], rounded)); // { '2': [ 2.1, 2.2 ], '3': [ 3.1, 3.3, 3.4 ] }
+
+// Challenge continued
+
+// Create a function ellloKeys that accepts an object and a callback and returns an array. The callback will return a boolean. elloKeys
+// will iterate over the object and invoke the callback for each value. If true is returned from the callback, push the key associated
+// with that value into the return array.
+
+const elloKeys = (obj, cb) => {
+  const outArray = [];
+  for (let key in obj) {
+    if (cb(obj[key]) === true) {
+      outArray.push(key);
+    }
+  }
+  return outArray;
+};
+
+// Uncomment below to check your work
+// console.log(typeof elloKeys); // function
+// const ello = (string) => string.slice(1, 5).toLowerCase() === "ello";
+// console.log(
+//   elloKeys(
+//     {
+//       good: "jello",
+//       cat: "bean",
+//       job: "mellow",
+//       with: "fellow",
+//       dog: "dirt",
+//       this: "bellow",
+//       chester: "bacon",
+//       unit: "cellos",
+//     },
+//     ello
+//   )
+// ); // [ 'good', 'job', 'with', 'this', 'unit' ]
 
 // Do not alter below this line
 export const bundle = {
@@ -146,4 +189,6 @@ export const bundle = {
   amITrue: amITrue,
   sortMe: sortMe,
   byFive: byFive,
+  groupMe: groupMe,
+  elloKeys: elloKeys,
 };
