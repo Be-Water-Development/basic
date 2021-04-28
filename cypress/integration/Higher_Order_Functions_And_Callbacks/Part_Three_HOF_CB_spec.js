@@ -91,3 +91,38 @@ describe("testing function byFive", () => {
       .should("deep.equal", { others: 3, fives: 5 });
   });
 });
+
+describe("testing function groupMe", () => {
+  it("groupMe is of type function", () => {
+    expect(typeof bundle.groupMe).to.equal("function");
+  });
+  it("the invocation of function groupMe to equal an object", () => {
+    cy.wrap({ groupMe: bundle.groupMe })
+      .invoke("groupMe", [2.1, 3.1, 2.2, 3.3, 3.4], (num) => Math.round(num))
+      .should("deep.equal", { 2: [2.1, 2.2], 3: [3.1, 3.3, 3.4] });
+  });
+});
+
+describe("testing function elloKeys", () => {
+  it("elloKeys if of type function", () => {
+    expect(typeof bundle.elloKeys).to.equal("function");
+  });
+  it("the invocation of function elloKeys to equal an array", () => {
+    cy.wrap({ elloKeys: bundle.elloKeys })
+      .invoke(
+        "elloKeys",
+        {
+          good: "jello",
+          cat: "bean",
+          job: "mellow",
+          with: "fellow",
+          dog: "dirt",
+          this: "bellow",
+          chester: "bacon",
+          unit: "cellos",
+        },
+        (string) => string.slice(1, 5).toLowerCase() === "ello"
+      )
+      .should("deep.equal", ["good", "job", "with", "this", "unit"]);
+  });
+});
