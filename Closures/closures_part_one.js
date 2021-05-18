@@ -108,6 +108,33 @@ const timesElevenOneTime = oneTime((num) => num * 11);
 // console.log(timesElevenOneTime(4)); // 22
 // console.log(timesElevenOneTime(6)); // 22
 
+// Challenge continued
+
+// Create a function post that accepts the number of times the callback needs to be called before being executed
+// as the first input and the callback as the second input.
+
+const post = (num, cb) => {
+  let count = 0;
+  return (string) => {
+    count++;
+    if (count >= num) {
+      return cb(string);
+    }
+  };
+};
+
+// Do not alter the below lines
+const called = (string) => {
+  return "Howdy " + string;
+};
+const postCall = post(4, called);
+
+// Uncomment below to check your work
+// console.log(postCall("partner")); // undefined
+// console.log(postCall("partner")); // undefined
+// console.log(postCall("partner")); // undefined
+// console.log(postCall("partner")); // "Howdy partner"
+
 // Do not alter below this line
 export const bundle = {
   myFunc: myFunc,
@@ -118,4 +145,6 @@ export const bundle = {
   addByThree: addByThree,
   timesElevenOneTime: timesElevenOneTime,
   oneTime: oneTime,
+  postCall: postCall,
+  post: post,
 };
