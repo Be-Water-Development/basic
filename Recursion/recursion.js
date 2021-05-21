@@ -68,14 +68,14 @@ function getLength(array, count = 0) {
 
 // Challenge continued
 
-// Create a function powerOf that takes two inputs, a base and an exponent, and returns the value of base ^ exponent.
+// Create a function powerOf that takes two inputs, a base and an exponent, and returns the value of base ^ exponent using recursion.
 
 const powerOf = (base, exponent) => {
-  if (!exponent) {
-    return base;
+  if (exponent === 0) {
+    return 1;
   }
 
-  return powerOf(base ** exponent);
+  return base * powerOf(base, exponent - 1);
 };
 
 // Uncomment below to check your work

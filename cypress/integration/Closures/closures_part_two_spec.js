@@ -5,13 +5,18 @@ describe("testing function pause", () => {
     expect(typeof bundle.pause).to.equal("function");
   });
   // Unsure on how to test this one
-  // it("the invocation of pauseFunc equals a number after specified wait time has passed", () => {
-  //   cy.wrap({ pauseFunc: bundle.pauseFunc })
-  //     .invoke("pauseFunc")
-  //     .should("equal", () => {
-  //       return setTimeout(bundle.count--, 1000);
-  //     });
-  // });
+  it("the invocation of pauseFunc logs a number after specified wait time has passed", () => {
+    // cy.spy(window.console, "log").as("consoleLog");
+    cy.wrap({ pauseFunc: bundle.pauseFunc }).invoke("pauseFunc").should("");
+
+    // .invoke("pauseFunc")
+    // .then(() => {
+    //   cy.wait(2000);
+    //   expect(bundle.count).to.equal(1);
+    // });
+
+    // cy.get("@consoleLog").should("be.calledWith", "1");
+  });
 });
 
 describe("testing function passCode", () => {
@@ -70,10 +75,6 @@ describe("testing function firstInput", () => {
     cy.wrap({ addToTen: bundle.addToTen })
       .invoke("addToTen", 5, 4)
       .should("equal", 15);
-  });
-  // iffy about this as well
-  it("firstInput should accept additional arguments", () => {
-    expect(bundle.addToTen.toString()).to.include("...");
   });
 });
 
