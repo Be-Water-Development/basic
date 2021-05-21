@@ -52,7 +52,7 @@ describe("testing function oneTime", () => {
 
 describe("testing function post", () => {
   it("post is of type function", () => {
-    expect(typeof bundle.post()).to.equal("function");
+    expect(typeof bundle.post).to.equal("function");
   });
   it("the invocation of function postCalled to equal undefined until specified number of function calls is reached", () => {
     cy.wrap({ postCall: bundle.postCall })
@@ -67,11 +67,5 @@ describe("testing function post", () => {
     cy.wrap({ postCall: bundle.postCall })
       .invoke("postCall", "partner")
       .should("equal", "Howdy partner");
-  });
-  it("the invocation of post should return an anonymous function", () => {
-    cy.wrap({ post: bundle.post })
-      .invoke("post")
-      .should("satisfy", (string) => string);
-    // I am iffy about this, circle back, want to test that it returns a function but lacking examples of how to test that...
   });
 });

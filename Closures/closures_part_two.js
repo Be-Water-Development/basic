@@ -11,13 +11,13 @@ const pause = (callback, wait) => {
 };
 
 // Do not alter the below lines
-let count = 1;
-const pauseFunc = pause(() => count--, 1000);
+let count = 0;
+const pauseFunc = pause(() => count++, 1000);
 
 // Uncomment below to check your work
 // pauseFunc();
-// console.log(count); // 1
-// setTimeout(() => console.log(count), 1000); // "0" (after one second)
+// console.log(count); // 0
+// setTimeout(() => console.log(count), 1000); // "1" (after one second)
 
 // Challenge continued
 
@@ -146,13 +146,13 @@ const replaceMe = () => {
 const swapMe = replaceMe();
 
 // Uncomment below to check your work
-console.log(swapMe("star", "closure"));
-console.log(swapMe("diamond", "variable"));
-console.log(
-  swapMe(
-    "Twinkle, twinkle, little star, How I wonder what you are, Up above the world so high, Like a diamond in the sky"
-  )
-); // Twinkle, twinkle, little closure, How I wonder what you are, Up above the world so high, Like a variable in the sky
+// console.log(swapMe("star", "closure"));
+// console.log(swapMe("diamond", "variable"));
+// console.log(
+//   swapMe(
+//     "Twinkle, twinkle, little star, How I wonder what you are, Up above the world so high, Like a diamond in the sky"
+//   )
+// ); // Twinkle, twinkle, little closure, How I wonder what you are, Up above the world so high, Like a variable in the sky
 
 // Do not alter below this line
 export const bundle = {
