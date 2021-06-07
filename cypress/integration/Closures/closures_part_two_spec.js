@@ -4,17 +4,19 @@ describe("testing function pause", () => {
   it("pause is of type function", () => {
     expect(typeof bundle.pause).to.equal("function");
   });
-  // Unsure on how to test this one
+  // Xavyr: Unsure on how to test this one, tried the commented out code below, both didn't work, any ideas?
   it("the invocation of pauseFunc logs a number after specified wait time has passed", () => {
+    // Failing test option one
+    // cy.wrap({ pauseFunc: bundle.pauseFunc })
+    //   .invoke("pauseFunc")
+    //   .then(() => {
+    //     cy.wait(2000);
+    //     expect(bundle.count).to.equal(1);
+    //   });
+    // Failing test option two
     // cy.spy(window.console, "log").as("consoleLog");
-    cy.wrap({ pauseFunc: bundle.pauseFunc }).invoke("pauseFunc").should("");
-
-    // .invoke("pauseFunc")
-    // .then(() => {
-    //   cy.wait(2000);
-    //   expect(bundle.count).to.equal(1);
-    // });
-
+    // cy.wrap({ pauseFunc: bundle.pauseFunc }).invoke("pauseFunc");
+    // cy.wait(1000);
     // cy.get("@consoleLog").should("be.calledWith", "1");
   });
 });

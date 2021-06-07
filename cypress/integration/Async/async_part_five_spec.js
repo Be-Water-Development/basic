@@ -7,7 +7,7 @@ describe("testing function order", () => {
   it("order logs 'green', 'eggs', and '& ham' in correct order", () => {
     cy.spy(window.console, "log").as("consoleLog");
     cy.get("@consoleLog").should("have.callCount", 3);
-    // How do you get cypress to care about order of console.logs...
+    // Xavyr: Can't get cypress to care about order of console logs, any ideas?
     cy.get("@consoleLog").should("be.calledWith", "green");
     cy.get("@consoleLog").should("be.calledWith", "eggs");
     cy.get("@consoleLog").should("be.calledWith", "& ham");
