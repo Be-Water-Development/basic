@@ -4,7 +4,8 @@
   "description": "Repository for JS Basics",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "test-terminal": "./node_modules/.bin/cypress run"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "homepage": "https://github.com/Be-Water-Development/basic#readme",
   "dependencies": {
     "chai": "^4.3.0",
-    "cypress": "^6.5.0",
+    "cypress": "^6.9.1",
     "mocha": "^8.3.0"
   }
 }

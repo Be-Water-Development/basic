@@ -62,7 +62,4 @@ describe("testing function sunglasses", () => {
       .invoke("sunglasses", "night")
       .should("equal", "I wear my sunglasses at night");
   });
-  it("testing the conversion of function sunglasses to ES6 syntax", () => {
-    expect(bundle.sunglasses.toString()).to.not.include("function");
-  });
 });
