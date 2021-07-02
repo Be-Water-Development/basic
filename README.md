@@ -14,5 +14,5 @@ Repository for JS Basics
 
 # Finished:
 - push final commit 
-- slack xavyr to let him know you are finished
-- I will review you code to professional standards
+- slack xavyr that you are finished with <b>your branch name</b>
+- I will pull down your code and review to professional standards
