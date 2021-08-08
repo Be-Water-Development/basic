@@ -3,13 +3,7 @@
 // Using a for loop, create a function sumMe that adds each element in the array to the variable sum to find the total of all array elements.
 // Sum should be returned from the function.
 
-const sumMe = (array) => {
-  let sum = 0;
-  array.forEach((ele) => {
-    sum += ele;
-  });
-  return sum;
-};
+const sumMe = (array) => {};
 
 // Uncomment below to check your work
 // console.log(typeof sumMe) // function
@@ -21,13 +15,7 @@ const sumMe = (array) => {
 // Create a function multiplyMe that takes an unknown number of numbers as arguments, multiplies them all together, and returns the result.
 // Hint: check out the spread operator.
 
-const multiplyMe = (...nums) => {
-  let result = 1;
-  nums.forEach((ele) => {
-    result *= ele;
-  });
-  return result;
-};
+const multiplyMe = () => {};
 
 // Uncomment below to check your work
 // console.log(typeof multiplyMe) // function
@@ -39,13 +27,7 @@ const multiplyMe = (...nums) => {
 // Create a function sumArrays that accepts two separate arrays as parameters. sumArrays adds each element in arrayOne to the element at the same index in arrayTwo.
 // sumArrays should return the new array.
 
-const sumArrays = (arr1, arr2) => {
-  let sum = [];
-  arr1.forEach((ele, index) => {
-    sum.push(ele + arr2[index]);
-  });
-  return sum;
-};
+const sumArrays = () => {};
 
 // Uncomment below to check your work
 // console.log(typeof sumArrays); // function
@@ -58,16 +40,7 @@ const sumArrays = (arr1, arr2) => {
 // if the sum of array1 and array2 at the same index is equal to 11. If the sum is equal to 11, the string “eleven” should be pushed into the
 // array in place of the array1 element. Otherwise, push the array1 element.
 
-const sumOfElevens = (arr1, arr2) => {
-  let result = [];
-  arr1.forEach((ele, index) => {
-    if (ele + arr2[index] === 11) {
-      return result.push("eleven");
-    }
-    result.push(ele);
-  });
-  return result;
-};
+const sumOfElevens = () => {};
 
 // Uncomment below to check your work
 // console.log(typeof sumOfElevens); // function
@@ -81,24 +54,7 @@ const sumOfElevens = (arr1, arr2) => {
 // When the count down reaches 0, push the string ‘zero’ right after the number 0.
 // Return the result array from the function.
 
-const countFromTen = (x) => {
-  let result = [];
-
-  while (x >= 0) {
-    result.push(x);
-    if (x === 7) {
-      result.push("seven");
-    }
-    if (x === 3) {
-      result.push("three");
-    }
-    if (x === 0) {
-      result.push("zero");
-    }
-    x--;
-  }
-  return result;
-};
+const countFromTen = () => {};
 
 // Uncomment below to check your work
 // console.log(typeof countFromTen); // function
@@ -109,17 +65,7 @@ const countFromTen = (x) => {
 // Complete the function pickANumber that takes two player inputs as number arguments between 1 and 100. The function will return 'Player 1 wins!' or 'Player 2 wins'
 // depending on which input is closest to the random number. Check out Math.abs() to determine who is closest to the random number.
 
-function pickANumber(player1, player2) {
-  const randomNumber = Math.floor(Math.random() * 100);
-  console.log(`If the random number is ${randomNumber}...`);
-  // Add code here
-  if (Math.abs(player1 - randomNumber) < Math.abs(player2 - randomNumber)) {
-    return "Player 1 wins!";
-  }
-  if (Math.abs(player2 - randomNumber) < Math.abs(player1 - randomNumber)) {
-    return "Player 2 wins!";
-  }
-}
+function pickANumber() {}
 
 // Uncomment below to check your work
 // console.log(pickANumber(22, 63)); // If the random number is (random number)... Player (unknown till function runs) wins!
@@ -129,17 +75,7 @@ function pickANumber(player1, player2) {
 // Create a function findTheRange that finds the range(difference between highest and lowest number) of the argument array.
 // The return value should be an array with the lowest number, highest number, and the range. Check out the sort() method to solve this challenge.
 
-const findTheRange = (arr) => {
-  let result = [];
-  arr.sort((a, b) => a - b);
-
-  for (let i = 0; i < arr.length; i++) {
-    result.push(arr[0]);
-    result.push(arr[arr.length - 1]);
-    result.push(Math.abs(arr[0] - arr[arr.length - 1]));
-    return result;
-  }
-};
+const findTheRange = () => {};
 
 // Uncomment below to check your work
 // console.log(typeof findTheRange); // function

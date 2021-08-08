@@ -6,10 +6,5 @@
 
 // After you’ve run the code, change the setTimeout timer for 0 ms and re-run the code. The event loop will come into play for when the setTimeout prints to the console.
 
-console.log("I am the first console log");
-
-setTimeout(() => console.log("I am the setTimeout callback"), 0);
-
-console.log("I am the final console log");
 
 // Please note there are no tests to run for this challenge.

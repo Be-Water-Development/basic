@@ -97,11 +97,6 @@ let found = false;
 // Using a for.. in loop, determine if the items object contains the property "foundItem". If that property is found, reassign the value of found to true.
 // Add code here
 
-for (let property in items) {
-  if (property === "foundItem") {
-    found = true;
-  }
-}
 
 // Uncomment below to check your answers
 // console.log(found); // true
@@ -114,11 +109,6 @@ let greaterThanFive = [];
 // Using a for.. in loop, iterate over objOfNums, if the value is greater than five, push that number into the greaterThanFiveArray.
 // Add code here
 
-for (let property in objOfNums) {
-  if (objOfNums[property] > 5) {
-    greaterThanFive.push(objOfNums[property]);
-  }
-}
 
 // Uncomment below to check your answers
 // console.log(greaterThanFive); // [ 22, 16, 9 ]
@@ -132,13 +122,6 @@ let ageByFive;
 // If any of the ages are divisible by 5, assign the variable ageByFive to true.
 // Add code here
 
-const ages = Object.values(people);
-
-for (let i = 0; i < ages.length; i++) {
-  if (ages[i] % 5 === 0) {
-    ageByFive = true;
-  }
-}
 
 // Uncomment below to check your answers
 // console.log(ages); // [ 17, 25, 66, 42 ]

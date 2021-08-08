@@ -4,11 +4,7 @@
 // pause should return a function that when called waits for the specified amount of time before executing the callback.
 // You will need to research setTimeout() to complete this challenge.
 
-const pause = (callback, wait) => {
-  return () => {
-    setTimeout(callback, wait);
-  };
-};
+const pause;
 
 // Do not alter the below lines
 let count = 0;
@@ -26,16 +22,7 @@ const pauseFunc = pause(() => count++, 1000);
 // string is passed in as an argument. When the password string is passed in, the returned function
 // will return an object with previously passed in arguments as keys, and the corresponding outputs as values.
 
-const passCode = (func, string) => {
-  const savedPairs = {};
-  return (num) => {
-    if (num === string) {
-      return savedPairs;
-    }
-    savedPairs[num] = func(num);
-    return func(num);
-  };
-};
+const passCode;
 
 // Do not alter the below lines
 const timesEleven = (num) => num * 11;
@@ -53,16 +40,7 @@ const timesElevenAndLog = passCode(timesEleven, "123");
 // returned function will return the second element of the array. This will continue until the last array element is reached,
 // then the cycle will start over with the first array element.
 
-const seasonCycle = (array) => {
-  let counter = 0;
-  return function () {
-    const result = array[counter++];
-    if (counter >= array.length) {
-      counter -= array.length;
-    }
-    return result;
-  };
-};
+const seasonCycle;
 
 // Do not alter the below lines
 const seasons = ["spring", "summer", "fall", "winter"];
@@ -81,16 +59,11 @@ const getSeason = seasonCycle(seasons);
 // firstInput will return a new function that invokes the callback function with the passed-in argument as the callbacks first argument.
 // Any additional arguments needed by the callback will need to be passed into the return function.
 
-const firstInput = (cb, arg) => {
-  return (...num) => {
-    return cb(arg, ...num);
-  };
-};
+const firstInput;
 
 // Do not alter the below lines
-const add = (arg1, arg2) => {
-  return arg1 + arg2;
-};
+const add;
+
 const addToTen = firstInput(add, 10);
 
 // Uncomment below to check your work
@@ -102,16 +75,7 @@ const addToTen = firstInput(add, 10);
 // The second key on the object will be an output key that has the corresponding value as the invocation of the passed in function.
 // You will need to research the date object to complete this challenge.
 
-function currentDate(callback) {
-  return function (...arg) {
-    const result = {};
-    let d = new Date();
-    let date = d.toDateString();
-    result["date"] = date;
-    result["output"] = callback(...arg);
-    return result;
-  };
-}
+function currentDate(){};
 
 // Do not alter the below lines
 const plusTen = currentDate((num) => (num += 10));
@@ -128,19 +92,7 @@ const plusTen = currentDate((num) => (num += 10));
 
 // ADD CODE HERE
 
-const replaceMe = () => {
-  const savedPairs = {};
-
-  return (str1, str2) => {
-    if (!str2) {
-      Object.keys(savedPairs).filter((key) => {
-        str1 = str1.replace(key, savedPairs[key]);
-      });
-      return str1;
-    }
-    savedPairs[str1] = str2;
-  };
-};
+const replaceMe;
 
 // Do not alter the below lines
 const swapMe = replaceMe();

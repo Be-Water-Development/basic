@@ -9,28 +9,7 @@ const sumOfOddThings = (arr1, arr2) => {
   let sumArr1 = 0;
   let sumArr2 = 0;
 
-  arr1.forEach((ele, index) => {
-    if (ele % 2 === 1) {
-      sumArr1 += ele;
-    }
-    if (arr2[index] % 2 === 1) {
-      sumArr2 += arr2[index];
-    }
-  });
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] % 2 === 1) {
-      arr1[i] += sumArr2;
-    }
-    if (arr2[i] % 2 === 1) {
-      arr2[i] += sumArr1;
-    }
-    if (Math.max(...arr2) > 10) {
-      arr1[i] *= 10;
-    }
-  }
-  return [arr1, arr2];
-};
+  arr1.forEach((ele, index) => {};
 
 // Uncomment below to check your work
 // console.log(typeof sumOfOddThings);
@@ -41,17 +20,7 @@ const sumOfOddThings = (arr1, arr2) => {
 
 // Create a function removeVowels with a string input, and returns a new string with all vowels removed.
 
-const removeVowels = (string) => {
-  let vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
-
-  for (let i = 0; i < string.length; i++) {
-    if (!vowels.includes(string[i].toLowerCase())) {
-      result += string[i];
-    }
-  }
-  return result;
-};
+const removeVowels = (string) => {};
 
 // Uncomment below to check your work
 // console.log(typeof removeVowels); // function
@@ -64,10 +33,7 @@ const removeVowels = (string) => {
 // Create a function addPear that accepts an object with fruit being the key, and fruit color being the value.
 // Add the key “pear” with the value “green” to the object and returns the mutated object.
 
-const addPear = (obj) => {
-  obj["pear"] = "green";
-  return obj;
-};
+const addPear = (obj) => {};
 
 // Uncomment below to check your work
 // const fruits = { strawberry: "red", blueberry: "blue", banana: "yellow" };
@@ -79,18 +45,7 @@ const addPear = (obj) => {
 // Create a function whereInTheWorld that accepts an object and returns the value paired with the key 'Carmen'.
 // If the key 'Carmen' is not found, return the string 'Where in the world is Carmen Sandiego?'
 
-const whereInTheWorld = (obj) => {
-  let result;
-  for (let key in obj) {
-    if (key === "Carmen") {
-      result = obj[key];
-    }
-    if (key !== "Carmen") {
-      result = "Where in the world is Carmen Sandiego?";
-    }
-  }
-  return result;
-};
+const whereInTheWorld = (obj) => {};
 
 // Uncomment below to check your work
 // const places = {
@@ -109,15 +64,7 @@ const whereInTheWorld = (obj) => {
 // Create a function buildArray that accepts an object. The object will hold a count as a value, with a label as a string.
 // buildArray should return an array with the key repeated count number of times. Keys should be grouped together in the return array.
 
-const buildArray = (obj) => {
-  let outArr = [];
-  for (let key in obj) {
-    for (let i = 0; i < obj[key]; i++) {
-      outArr.push(key);
-    }
-  }
-  return outArr;
-};
+const buildArray = (obj) => {};
 
 // Uncomment below to check your work
 // console.log(typeof buildArray); // function
@@ -129,9 +76,7 @@ const buildArray = (obj) => {
 // Create a function endOfUnit that returns the string “Congrats, you completed the functions unit!”. Now, convert this function to an anonymous function expression
 // and assign it to a variable called theEnd. An invocation of theEnd should return the return value from endOfUnit.
 
-const theEnd = function endOfUnit() {
-  return "Congrats, you completed the functions unit!";
-};
+const theEnd = function endOfUnit() {};
 
 // Uncomment below to check your work
 // console.log(typeof theEnd); // function

@@ -4,14 +4,9 @@
 
 const y = 6;
 
-function func1(num) {
-  const y = 4;
-  return num === y;
-}
+function func1(){}
 
-function func2(num) {
-  return num === y;
-}
+function func2(){}
 
 const one = func1(4); // Add argument here
 const two = func2(6); // Add argument here
@@ -26,28 +21,13 @@ const two = func2(6); // Add argument here
 
 let dwight = "";
 
-function bears(string) {
-  // Add code here
-  string += "Bears";
-  return beets(string);
-}
+function bears(){}
 
-function beets(string) {
-  // Add code here
-  string += "Beets";
-  return battlestar(string);
-}
+function beets(){}
 
-function battlestar(string) {
-  // Add code here
-  string += "Battlestar";
-  return galactica(string);
-}
+function battlestar(){}
 
-function galactica(string) {
-  // Add code here
-  return (string += "Galactica");
-}
+function galactica(){}
 
 dwight = bears(dwight);
 
@@ -61,20 +41,9 @@ dwight = bears(dwight);
 
 let restaurantOpen = true;
 
-function orderFood(food) {
-  // Add code here
-  return callRestaurant(restaurantOpen, food);
-}
+function orderFood(){}
 
-function callRestaurant(bool, string) {
-  // Add code here
-  if (bool) {
-    return `Lets order ${string}`;
-  }
-  if (!bool) {
-    return `Restaurant is closed`;
-  }
-}
+function callRestaurant(){}
 
 // Uncomment below to check your work
 // console.log(orderFood("Thai")); // Lets order Thai
@@ -85,7 +54,7 @@ function callRestaurant(bool, string) {
 
 // Create a function isEven, and return true if the number is even, and false if the number is odd.
 
-const isEven = (num) => (num % 2 === 0 ? true : false);
+const isEven;
 
 // Uncomment below to check your work
 // console.log(isEven(8)); // true
@@ -96,7 +65,7 @@ const isEven = (num) => (num % 2 === 0 ? true : false);
 // Create a function findRemainder that accepts two numbers, and returns the remainder of dividing the larger number by the smaller number. You must include a
 // guard clause that determines what number is the bigger number.
 
-const findRemainder = (num1, num2) => (num1 > num2 ? num1 % num2 : num2 % num1);
+const findRemainder;
 
 // Uncomment below to check your work
 // console.log(findRemainder(15, 5)); // 0

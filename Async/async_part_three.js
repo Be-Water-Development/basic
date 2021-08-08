@@ -17,15 +17,9 @@
 
 let dataReceived;
 
-const ajaxSimulate = (id, cb) => {
-  const database = ["Charlie", "Dee", "Mac"];
-  setTimeout(cb, 0, database[id]);
-};
+const ajaxSimulate;
 
-const dataStore = (data) => {
-  dataReceived = data;
-  console.log(dataReceived);
-};
+const dataStore;
 
 ajaxSimulate(2, dataStore);
 

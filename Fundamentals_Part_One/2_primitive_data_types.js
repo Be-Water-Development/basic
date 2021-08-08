@@ -8,10 +8,6 @@
 
 // Challenge 4: Declare a variable `programmingHesitations` and set it's value to null
 
-const birthCity = "San Diego";
-const birthYear = 1990;
-const loveCoding = true;
-const programmingHesitations = null;
 
 // Do not alter these lines
 export const bundle = {

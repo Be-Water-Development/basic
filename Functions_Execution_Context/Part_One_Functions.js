@@ -2,7 +2,7 @@
 
 // Create a function addTen that accepts a number, and returns the number plus 10.
 
-const addTen = (num) => num + 10;
+const addTen;
 
 // Uncomment below to check your work
 // console.log(typeof addTen); // function
@@ -12,7 +12,7 @@ const addTen = (num) => num + 10;
 
 // Create a function addExclamation that accepts a string, and returns the string with "!" added to the end.
 
-const addExclamation = (string) => (string += "!");
+const addExclamation;
 
 // Uncomment below to check your work
 // console.log(typeof addExclamation); // function
@@ -22,7 +22,7 @@ const addExclamation = (string) => (string += "!");
 
 // Create a function whatsUp that accepts a string, and returns the string "Whats up (string)?", with the passed in string added before the question mark.
 
-const whatsUp = (string) => `Whats up ${string}?`;
+const whatsUp;
 
 // Uncomment below to check your work
 // console.log(typeof whatsUp); // function
@@ -32,7 +32,7 @@ const whatsUp = (string) => `Whats up ${string}?`;
 
 // Create a function addTwoNums that accepts two numbers as parameters, num1 and num2, and returns the string '(num1) plus (num2) equals (num1 + num2)'.
 
-const addTwoNums = (num1, num2) => `${num1} plus ${num2} equals ${num1 + num2}`;
+const addTwoNums;
 
 // Uncomment below to check your work
 // console.log(typeof addTwoNums); // function
@@ -42,7 +42,7 @@ const addTwoNums = (num1, num2) => `${num1} plus ${num2} equals ${num1 + num2}`;
 
 // Create a function lastLetter that utilizes bracket notation to return the last letter or character of a string.
 
-const lastLetter = (string) => string[string.length - 1];
+const lastLetter;
 
 // Uncomment below to check your work
 // console.log(typeof lastLetter); // function
@@ -60,9 +60,7 @@ const lastLetter = (string) => string[string.length - 1];
 //   return `I wear my sunglasses at ${string}`;
 // }
 
-const sunglasses = (string) => {
-  return `I wear my sunglasses at ${string}`;
-};
+const sunglasses;
 
 // Uncomment below to check your work
 // console.log(typeof sunglasses); // function

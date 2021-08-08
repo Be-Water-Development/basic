@@ -3,11 +3,7 @@
 // Create a function mapMe that accepts an array and returns a new array. The new array should contain all elements from the input array converted to uppercase.
 // Utilize the built in map method to complete this challenge.
 
-const mapMe = (array) => {
-  return array.map((ele) => {
-    return ele.toUpperCase();
-  });
-};
+const mapMe;
 
 // Uncomment below to check your work
 // console.log(typeof mapMe); // function
@@ -32,24 +28,7 @@ const mapMe = (array) => {
 // it with this challenge. You should also include a guard clause that makes sure the array passed in is indeed an array, if the array passed in is not array, return the string
 // "this function requires an array as input"
 
-const reduce = (arr, cb, initialValue) => {
-  if (Array.isArray(arr)) {
-    let acc;
-    if (initialValue === undefined) {
-      acc = arr[0];
-      arr = arr.slice(1);
-    }
-    if (initialValue !== undefined) {
-      acc = initialValue;
-    }
-
-    arr.forEach((ele) => {
-      acc = cb(acc, ele);
-    });
-    return acc;
-  }
-  return "this function requires an array as input";
-};
+const reduce;
 
 // Uncomment below to check your work
 // const nums = [1, 2, 3, 4];
@@ -63,11 +42,7 @@ const reduce = (arr, cb, initialValue) => {
 
 // Create a function reduceMe that accepts an array and multiplies all array elements together. Use the built-in method reduce.
 
-const reduceMe = (arr) => {
-  return arr.reduce((acc, item) => {
-    return (acc *= item);
-  });
-};
+const reduceMe;
 
 // Uncomment below to check your work
 // console.log(typeof reduceMe);
@@ -78,17 +53,7 @@ const reduceMe = (arr) => {
 // Create a function crossRoads that compares input arrays and returns a new array with elements that appear in all of the input arrays.
 // Use the built in method reduce to complete this challenge.
 
-const crossRoads = (arrays) => {
-  return arrays.reduce((acc, item) => {
-    let result = [];
-    item.forEach((ele) => {
-      if (acc.includes(ele)) {
-        result.push(ele);
-      }
-    });
-    return result;
-  });
-};
+const crossRoads;
 
 // Uncomment below to check your work
 // console.log(typeof crossRoads); // function
@@ -105,14 +70,7 @@ const crossRoads = (arrays) => {
 // Create a function duplicates that takes an input of an array of arrays.
 // Duplicates should flatten the arrays and remove any duplicate elements. Use the built- in method reduce.
 
-const duplicates = (arrays) => {
-  return arrays.flat(Infinity).reduce((acc, item) => {
-    if (acc.includes(item)) {
-      return acc;
-    }
-    return acc.concat(item);
-  }, []);
-};
+const duplicates;
 
 // Uncomment below to check your work
 // console.log(typeof duplicates); // function
@@ -130,14 +88,7 @@ const duplicates = (arrays) => {
 // If invoking callback on the first array element is equal to the second array element at the same index,
 // add the first array element as the key, and the second array element as the value.
 
-const matchMe = (arr1, arr2, cb) => {
-  return arr1.reduce((acc, item, index) => {
-    if (cb(item) === arr2[index]) {
-      acc[item] = arr2[index];
-    }
-    return acc;
-  }, {});
-};
+const matchMe;
 
 // Uncomment below to check your work
 // console.log(typeof matchMe) // function
@@ -150,12 +101,7 @@ const matchMe = (arr1, arr2, cb) => {
 // Create a function arrIntoObj that accepts an array and a callback as arguments. arrIntoObj should return an object that has the array element as a key,
 // and the result of invoking the callback on the array element as the value.
 
-const arrIntoObj = (arr, cb) => {
-  return arr.reduce((acc, item) => {
-    acc[item] = cb(item);
-    return acc;
-  }, {});
-};
+const arrIntoObj;
 
 // Uncomment below to check your work
 // console.log(typeof arrIntoObj); // function;

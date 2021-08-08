@@ -4,16 +4,7 @@
 // messOfArrays will return an object. The keys will be the first arrays values, the values for each key will be an array
 // containing the results of running the key through each one of the callbacks.
 
-const messOfArrays = (arr, cb) => {
-  return arr.reduce((acc, item) => {
-    const cbResults = [];
-    cb.forEach((ele) => {
-      cbResults.push(ele(item));
-    });
-    acc[item] = cbResults;
-    return acc;
-  }, {});
-};
+const messOfArrays;
 
 // Uncomment below to check your work
 // console.log(typeof messOfArrays); // function
@@ -33,24 +24,7 @@ const messOfArrays = (arr, cb) => {
 // then amITrue will return true. If the number of true returns and false returns are equal, or the majority of the returns are false,
 // amITrue will return false.
 
-const amITrue = (arr, cb1, cb2) => {
-  const t = [];
-  const f = [];
-
-  arr.forEach((ele) => {
-    if (cb1(ele) === true && cb2(ele) === true) {
-      t.push(true);
-    }
-    if (cb1(ele) === false || cb2(ele) === false) {
-      f.push(false);
-    }
-  });
-
-  if (t.length > f.length) {
-    return true;
-  }
-  return false;
-};
+const amITrue = (arr, cb1, cb2) => {}
 
 // Uncomment below to check your work
 // console.log(typeof amITrue); // function
@@ -82,21 +56,7 @@ const amITrue = (arr, cb1, cb2) => {
 // and pass each array item through a callback. sortMe will return a new array, and array elements that return a true value should come first in the array,
 // and the array elements that return a false value should come second.
 
-const sortMe = (arr, cb) => {
-  const t = [];
-  const f = [];
-
-  arr.forEach((ele) => {
-    if (cb(ele) === true) {
-      t.push(ele);
-    }
-    if (cb(ele) === false) {
-      f.push(ele);
-    }
-  });
-
-  return t.concat(f);
-};
+const sortMe;
 
 // Uncomment below to check your work
 // console.log(typeof sortMe); // function
@@ -113,12 +73,7 @@ const sortMe = (arr, cb) => {
 // callback for each array element. The return object will consist of the return value from the callback as keys, and thevalue will be the
 // number of times that return value was returned from the callback.
 
-const byFive = (arr, cb) => {
-  return arr.reduce((acc, item) => {
-    acc[cb(item)] = (acc[cb(item)] || 0) + 1;
-    return acc;
-  }, {});
-};
+const byFive;
 
 // Uncomment below to check your work. Look up ternary operators to find out what's happening in the callback.
 // console.log(typeof byFive) // function
@@ -131,17 +86,7 @@ const byFive = (arr, cb) => {
 // and invoke the callback for each array element. The object will consist of the return value from the callback as the key.
 // The value will be an array containing all of the original passed in elements that resulted in the key when invoked with the callback.
 
-const groupMe = (arr, cb) => {
-  return arr.reduce((acc, item) => {
-    if (acc[cb(item)]) {
-      acc[cb(item)].push(item);
-    }
-    if (!acc[cb(item)]) {
-      acc[cb(item)] = [item];
-    }
-    return acc;
-  }, {});
-};
+const groupMe;
 
 // Uncomment below to check your work
 // const rounded = (num) => Math.round(num);
@@ -154,15 +99,7 @@ const groupMe = (arr, cb) => {
 // will iterate over the object and invoke the callback for each value. If true is returned from the callback, push the key associated
 // with that value into the return array.
 
-const elloKeys = (obj, cb) => {
-  const outArray = [];
-  for (let key in obj) {
-    if (cb(obj[key]) === true) {
-      outArray.push(key);
-    }
-  }
-  return outArray;
-};
+const elloKeys;
 
 // Uncomment below to check your work
 // console.log(typeof elloKeys); // function

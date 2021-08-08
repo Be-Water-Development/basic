@@ -31,14 +31,14 @@
 // Declare a variable upper and set it’s value equal to the string soccerChant converted to uppercase letters.
 // Declare a variable lower and set it’s value equal to the string soccerChant converted to lowercase letters.
 
-let soccerTeam = "Portland Timbers";
-let soccerChant = "Green is the Color";
+let soccerTeam;
+let soccerChant;
 
 //Add code here
 
-let count = soccerTeam.length;
-let upper = soccerChant.toUpperCase();
-let lower = soccerChant.toLowerCase();
+let count;
+let upper;
+let lower;
 
 //Uncomment below to check your answers
 // console.log(count); // 16

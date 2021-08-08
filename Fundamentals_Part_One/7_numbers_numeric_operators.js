@@ -40,11 +40,6 @@
 // Declare a variable timesTen and set it equal to the variable oneHundred times ten.
 // Declare a variable divideByFive and set it equal to the variable oneHundred divided by five.
 
-let oneHundred = 100;
-let plusTen = oneHundred + 10;
-let minusTen = oneHundred - 10;
-let timesTen = oneHundred * 10;
-let divideByFive = oneHundred / 5;
 
 //Uncomment the following to check your answers
 // console.log(oneHundred); // 100

@@ -8,8 +8,8 @@ Repository for JS Basics
 - begin coding...
 
 # In Progress:
-- to run tests and see progress from root of repository run `npm run test` (this will run all code and tests) in the terminal
-- to run individual tests in the cypress testing user interface run `npm run ui-test` in the terminal 
+- to run tests and see progress from root of repository run `npm run test-terminal` (this will run all code and tests) in the terminal
+- to run individual tests in the cypress testing user interface run `npm run test` in the terminal 
 - remember to actively commit your code and push to github <b>on your branch</b> to grow git history
 
 # Finished:

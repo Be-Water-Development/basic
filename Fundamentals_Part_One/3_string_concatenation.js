@@ -8,7 +8,7 @@ const first = "Welcome";
 const second = "to the";
 const third = "jungle!";
 
-const welcomeStatement = first + " " + second + " " + third;
+const welcomeStatement;
 
 // Do not alter below this line
 export const bundle = { welcomeStatement };

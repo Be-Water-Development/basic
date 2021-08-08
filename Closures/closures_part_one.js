@@ -3,11 +3,7 @@
 // Create a function welcomeTo that creates and returns a function. When the newly created function is called,
 // it should return the string “Welcome to closures!”
 
-const welcomeTo = () => {
-  return () => {
-    return "Welcome to closures!";
-  };
-};
+const welcomeTo;
 
 // Do not alter the below line
 const myFunc = welcomeTo();
@@ -21,11 +17,7 @@ const myFunc = welcomeTo();
 // Create a function passingStrings that accepts one input and returns a function. When the created function is called,
 // it should return the string that was passed to passingStrings when it was created.
 
-const passingStrings = (string) => {
-  return () => {
-    return string;
-  };
-};
+const passingStrings;
 
 // Do not alter the below line
 const passedFunc = passingStrings("Hello world");
@@ -67,11 +59,7 @@ const countTwo = wrapper();
 
 // Create a function addByY that returns a function that will add an input by y.
 
-const addByY = (num1) => {
-  return (num2) => {
-    return num1 + num2;
-  };
-};
+const addByY;
 
 // Do not alter the below line
 const addByThree = addByY(3);
@@ -87,17 +75,7 @@ const addByThree = addByY(3);
 // it should execute the callback and return the output. If the function is called any additional times, it will return
 // the output from the first call to the function.
 
-const oneTime = (cb) => {
-  let ran = false;
-  let output;
-  return (num) => {
-    if (!ran) {
-      ran = true;
-      output = cb(num);
-    }
-    return output;
-  };
-};
+const oneTime;
 
 // Do not alter the below line
 const timesElevenOneTime = oneTime((num) => num * 11);
@@ -113,15 +91,7 @@ const timesElevenOneTime = oneTime((num) => num * 11);
 // Create a function post that accepts the number of times the callback needs to be called before being executed
 // as the first input and the callback as the second input.
 
-const post = (num, cb) => {
-  let count = 0;
-  return (string) => {
-    count++;
-    if (count >= num) {
-      return cb(string);
-    }
-  };
-};
+const post;
 
 // Do not alter the below lines
 const called = (string) => {

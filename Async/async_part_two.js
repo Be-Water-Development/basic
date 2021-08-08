@@ -10,11 +10,7 @@
 
 // To wrap it all up, run the timeLog function on each item of the waitTime array using the forEach you just created.
 
-const forEach = (arr, cb) => {
-  for (let i = 0; i < arr.length; i++) {
-    cb(arr[i], i);
-  }
-};
+const forEach;
 
 const waitTime = [100, 400, 1000, 300];
 

@@ -37,8 +37,6 @@
 
 //Add code here
 
-const stringOrNum = 5 + 5 + "5" + 5;
-
 //Uncomment to check your answer
 //console.log(stringOrNum);
 

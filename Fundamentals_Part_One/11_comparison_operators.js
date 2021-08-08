@@ -53,13 +53,6 @@ let likesBears = false; // notice no quotes
 // Declare a variable isLooselyEqual and assign its value to be a comparison of favNum and favNumString with the loosely equal operator.
 // Declare a variable isStrictlyEqual and assign its value to be a comparison of favNum and favNumString with the strictly equal operator.
 
-const smallNum = 5;
-const bigNum = 10;
-const isBigger = bigNum > smallNum;
-const favNum = 16;
-const favNumString = "16";
-const isLooselyEqual = favNum == favNumString;
-const isStrictlyEqual = favNum === favNumString;
 
 //Uncomment below to check your work
 // console.log(smallNum); // 5

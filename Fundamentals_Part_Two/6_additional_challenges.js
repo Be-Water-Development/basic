@@ -7,9 +7,6 @@ const nestedSubarray = [];
 
 // Add code here
 
-for (let i = 0; i < 8; i++) {
-  nestedSubarray.push([`iteration${i}, ${i}`]);
-}
 
 // Uncomment below to check your answer
 // console.log(nestedSubarray); // [['iteration0, 0'], ['iteration1, 1'], ['iteration2, 2'], ['iteration3, 3'], ['iteration4, 4'], ['iteration5, 5'], ['iteration6, 6'], ['iteration7, 7']]
@@ -24,11 +21,6 @@ const sStrings = {};
 
 // Add code here
 
-for (let i = 0; i < animals.length; i++) {
-  if (animals[i].startsWith("s")) {
-    sStrings[animals[i]] = i;
-  }
-}
 
 // Uncomment below to check your answer
 // console.log(sStrings); // { snake: 0, spider: 2, seal: 4 }
@@ -47,11 +39,6 @@ const addThis = {
 };
 let sum = 0;
 
-for (let prop in addThis) {
-  if (typeof addThis[prop] === "number") {
-    sum += addThis[prop];
-  }
-}
 
 // Uncomment below to check your answer
 // console.log(sum); // 18

@@ -22,9 +22,6 @@ let countDown = 10;
 // Using a while loop, decrement countDown until it reaches zero.
 // Add code here
 
-while (countDown > 0) {
-  countDown--;
-}
 
 // Uncomment below to check your answers
 // console.log(countDown); // 0
@@ -35,12 +32,6 @@ while (countDown > 0) {
 // The loop should execute while numToAdd is less than 15. Sum should equal the sum of numbers 0-14 when the loop is complete.
 // Add code here
 
-let numToAdd = 0;
-let sum = 0;
-
-while (numToAdd < 15) {
-  sum += numToAdd++;
-}
 
 // Uncomment below to check your answers
 // console.log(sum); // 105

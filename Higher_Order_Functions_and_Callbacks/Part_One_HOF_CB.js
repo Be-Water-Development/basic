@@ -24,13 +24,7 @@ const pastTense = (array) => {
 
 const timesEleven = (num) => num * 11;
 
-const map = (arr, cb) => {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    result.push(cb(arr[i]));
-  }
-  return result;
-};
+const map;
 
 // Uncomment below to check your work
 // console.log(typeof timesEleven); // function
@@ -42,19 +36,9 @@ const map = (arr, cb) => {
 // Create a function forEach that accepts an array and a callback. forEach will run the callback on each element of the array with a for loop without returning anything.
 // Now, rebuild map from the previous challenge, name the function mapTwo. Instead of using a for loop, use the forEach function that was just created.
 
-const forEach = (arr, cb) => {
-  for (let i = 0; i < arr.length; i++) {
-    cb(arr[i]);
-  }
-};
+const forEach;
 
-const mapTwo = (arr, cb) => {
-  let result = [];
-  forEach(arr, (num) => {
-    result.push(cb(num));
-  });
-  return result;
-};
+const mapTwo;
 
 // Uncomment below to check your work
 // console.log(typeof forEach); // function
@@ -78,16 +62,12 @@ const filterThisArray = (array, callback) => {
 
 const cb1 = (string) => {
   // Add code here
-  if (string === string.toUpperCase()) {
-    return string;
-  }
+
 };
 
 const cb2 = (string) => {
   // Add code here
-  if (string === string.toLowerCase()) {
-    return string;
-  }
+
 };
 
 const arrayOfThings = ["CAT", "dog", "CATDOG", "wish", "WISHBONE"];
@@ -101,13 +81,7 @@ const arrayOfThings = ["CAT", "dog", "CATDOG", "wish", "WISHBONE"];
 // Create a function orFilter that accepts an array and two seperate callbacks. Using the built in array method filter, return an array that contains
 // all of the elements that return a truthy value from either of the two callbacks.
 
-const orFilter = (array, cb1, cb2) => {
-  return array.filter((ele) => {
-    if (cb1(ele) || cb2(ele)) {
-      return ele;
-    }
-  });
-};
+const orFilter;
 
 // Uncomment below to check your work
 // console.log(typeof orFilter); // function

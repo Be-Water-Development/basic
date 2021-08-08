@@ -62,10 +62,6 @@ let countToTen = 0;
 
 // Add code here
 
-for (let i = 0; i < 10; i++) {
-  countToTen++;
-}
-
 // Uncomment below to check your answers
 // console.log(countToTen); // 10
 
@@ -77,9 +73,6 @@ const nums = [1, 2, 3, 4, 5, 6];
 
 // Add code here
 
-for (let i = 0; i < nums.length; i++) {
-  nums[i] *= 11;
-}
 
 // Uncomment below to check your answers
 // console.log(nums); // [ 11, 22, 33, 44, 55, 66 ]
@@ -91,10 +84,6 @@ const weatherUpdate = [];
 
 // Iterate over the weather array using a for loop, pushing a string with the format "It is [weather] outside" into the weatherUpdate array.
 // Add code here
-
-for (let i = 0; i < weather.length; i++) {
-  weatherUpdate.push(`It is ${weather[i]} outside`);
-}
 
 // Uncomment below to check your answers
 // console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
@@ -120,11 +109,6 @@ const nationalParks = [];
 // ]
 
 //Add code here
-for (let i = 0; i < park.length; i++) {
-  nationalParks.push(
-    `${park[i]} National Park is in ${location[i]} and attractions are ${attraction[i]}`
-  );
-}
 
 // Uncomment below to check your answers
 // console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
