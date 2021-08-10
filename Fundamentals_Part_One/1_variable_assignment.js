@@ -9,9 +9,9 @@
 // the first key's value will be your created var variable
 // the second key's value will be your array
 
-var number;
-let array;
-const object;
+var number = 10
+let array = ['a', 'b', 'c']
+const object = { num: 'arr' }
 
 // Do not alter below this line
 export const bundle = { num: number, arr: array, obj: object };
