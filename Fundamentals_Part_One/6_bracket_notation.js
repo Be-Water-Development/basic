@@ -42,9 +42,9 @@ const answer = "because they didn’t get arrays";
 
 //Add code here
 
-const firstChar;
-const tenthChar;
-const lastChar;
+const firstChar = 'P'
+const tenthChar = "b"
+const lastChar = "whatever"
 
 // Uncomment below to check your answers
 // console.log(firstChar); // "w"
