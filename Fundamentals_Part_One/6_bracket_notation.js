@@ -27,27 +27,7 @@
 
 // Also keep in mind, if the variable was a constant variable, you cannot reassign the value.
 
-// const textThree = "fight";
-// textThree = "flight"; // Error! Cannot reassign to constant variable
-
-// Challenge
-
-// Declare a variable firstChar and assign it a value of the first letter of the variable joke using bracket notation.
-// Declare a variable tenthChar and assign it a value of the tenth letter of the variable joke using bracket notation.
-// Declare a variable lastChar and assign it a value of the last letter of the variable answer using bracket notation. Utilize the .length property learned
-// in the string methods and properties section.
-
-const joke = "why did the programmer quit their job?";
-const answer = "because they didn’t get arrays";
-
-//Add code here
-
-const firstChar = 'P'
-const tenthChar = "b"
-const lastChar = "whatever"
-
-// Uncomment below to check your answers
-// console.log(firstChar); // "w"
+// const textThree = "fight
 // console.log(tenthChar); // "h"
 // console.log(lastChar); // "s"
 
