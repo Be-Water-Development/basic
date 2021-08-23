@@ -6,8 +6,8 @@
 let likesBeets = true;
 let likesBears = false; // notice no quotes
 
-// console.log(`Dwight likes beets? ${likesBeets}`);
-// console.log(`Jim likes bears? ${likesBears}`);
+// console.log(`Dwight likes beets? ${likesBeets}`); // Dwight likes beets? true
+// console.log(`Jim likes bears? ${likesBears}`);  // Jim likes bears? false
 
 // Comparison Operators
 
@@ -45,6 +45,9 @@ let likesBears = false; // notice no quotes
 // console.log(false === false); // true
 // console.log(false === "false"); // false
 
+// what about string === string?
+console.log("false" === "false")
+
 // Challenge
 
 // Declare a variable smallNum and set it equal to 5, declare another variable bigNum and set is equal to 10.
@@ -53,23 +56,34 @@ let likesBears = false; // notice no quotes
 // Declare a variable isLooselyEqual and assign its value to be a comparison of favNum and favNumString with the loosely equal operator.
 // Declare a variable isStrictlyEqual and assign its value to be a comparison of favNum and favNumString with the strictly equal operator.
 
+let smallNum = 5;
+let bigNum = 10;
+let isBigger = bigNum > smallNum;
+
+let favNum = 8;
+let favNumString = "8";
+let isLooselyEqual = favNum == favNumString;
+let isStrictlyEqual = favNum === favNumString;
+
+
+
 
 //Uncomment below to check your work
-// console.log(smallNum); // 5
-// console.log(bigNum); // 10
-// console.log(isBigger); // true
-// console.log(typeof favNum === "number"); // true
-// console.log(typeof favNumString === "string"); // true
-// console.log(isLooselyEqual); // true
-// console.log(isStrictlyEqual); // false
+console.log(smallNum); // 5
+console.log(bigNum); // 10
+console.log(isBigger); // true
+console.log(typeof favNum === "number"); // true
+console.log(typeof favNumString === "string"); // true
+console.log(isLooselyEqual); // true
+console.log(isStrictlyEqual); // false
 
 //Do not alter below this line
-export const bundle = {
-  smallNum: smallNum,
-  bigNum: bigNum,
-  isBigger: isBigger,
-  favNum: favNum,
-  favNumString: favNumString,
-  isLooselyEqual: isLooselyEqual,
-  isStrictlyEqual: isStrictlyEqual,
-};
+// export const bundle = {
+//   smallNum: smallNum,
+//   bigNum: bigNum,
+//   isBigger: isBigger,
+//   favNum: favNum,
+//   favNumString: favNumString,
+//   isLooselyEqual: isLooselyEqual,
+//   isStrictlyEqual: isStrictlyEqual,
+// };

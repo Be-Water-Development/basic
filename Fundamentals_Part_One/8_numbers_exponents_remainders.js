@@ -29,16 +29,36 @@
 // Declare a constant sixtySixModSeven and assign it the value of the remainder of dividing 66 by 7.
 // Declare a constant sevenModEight and assign it the value of the remainder of dividing 7 by 8.
 
-//Uncomment below to check your answers
-// console.log(sixSquared); // 36
-// console.log(fourCubed); // 64
-// console.log(sixtySixModSeven); // 3
-// console.log(sevenModEight); // 7
+const sixSquared = 6 ** 2;
+const fourCubed = 4 ** 3;
+const sixtySixModSeven = 66 % 7;
+const sevenModEight = 7 % 8;
+
+
+// Uncomment below to check your answers
+console.log(sixSquared); // 36
+console.log(fourCubed); // 64
+console.log(sixtySixModSeven); // 3
+console.log(sevenModEight); // 7
+
+// playing around
+
+const fancyFormula = ((6 ** 2) % 6) + 7;
+console.log(fancyFormula);
+
+// build an array with values 0, 1, 2, 3 
+const oneHundred = 100;
+const one = "one"
+
+let testArray = [81 % 9, 1 ** 17, oneHundred - 98, one.length]
+console.log(testArray)
+
+
 
 //Do not alter below this line
-export const bundle = {
-  sixSquared: sixSquared,
-  fourCubed: fourCubed,
-  sixtySixModSeven: sixtySixModSeven,
-  sevenModEight: sevenModEight,
-};
+// export const bundle = {
+//   sixSquared: sixSquared,
+//   fourCubed: fourCubed,
+//   sixtySixModSeven: sixtySixModSeven,
+//   sevenModEight: sevenModEight,
+// };

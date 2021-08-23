@@ -37,8 +37,12 @@
 
 //Add code here
 
+let stringOrNum = 5 + 5 + "5" + 5;
+// javascript will coerce and become a string
+
+
 //Uncomment to check your answer
-//console.log(stringOrNum);
+console.log(stringOrNum);
 
 // Challenge continued
 
@@ -54,22 +58,22 @@ const ripeProgression = ["hard", "soft"];
 
 //Add code here
 
-const favFoodType = typeof favFood;
-const timesEatenType = typeof timesEaten;
-const eatAgainType = typeof eatAgain;
-const ripeProgressionArray = Array.isArray(ripeProgression);
+const favFoodType = typeof favFood; // string
+const timesEatenType = typeof timesEaten; // number
+const eatAgainType = typeof eatAgain; // boolean
+const ripeProgressionArray = Array.isArray(ripeProgression); // true
 
 // Uncomment below to check your answers
-// console.log(favFoodType); // "string"
-// console.log(timesEatenType); // "number"
-// console.log(eatAgainType); // "boolean"
-// console.log(ripeProgressionArray); // "true"
+console.log(favFoodType); // "string"
+console.log(timesEatenType); // "number"
+console.log(eatAgainType); // "boolean"
+console.log(ripeProgressionArray); // "true"
 
 //Do not alter below this line
-export const bundle = {
-  stringOrNum: stringOrNum,
-  favFoodType: favFoodType,
-  timesEatenType: timesEatenType,
-  eatAgainType: eatAgainType,
-  ripeProgressionArray: ripeProgressionArray,
-};
+// export const bundle = {
+//   stringOrNum: stringOrNum,
+//   favFoodType: favFoodType,
+//   timesEatenType: timesEatenType,
+//   eatAgainType: eatAgainType,
+//   ripeProgressionArray: ripeProgressionArray,
+// };

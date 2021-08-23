@@ -41,11 +41,18 @@
 // Declare a variable citiesLength, and assign it the value of the length of the cities array.
 // Add code here
 
+const cities = ["Portland", "Seattle", "Berkeley", "Reno", "Bend"]
+
+console.log(Array.isArray(cities));
+cities[2] = "San Francisco";
+const citiesLength = cities.length;
+
+
 
 // Uncomment below to check your answers
-// console.log(Array.isArray(cities)); // true
-// console.log(cities[2]); // San Francisco
-// console.log(citiesLength); // 5
+console.log(Array.isArray(cities)); // true
+console.log(cities[2]); // San Francisco
+console.log(citiesLength); // 5
 
 // Challenge continued
 
@@ -54,10 +61,11 @@ const nums = [1, 2, 3, 4, 5, 6];
 // Using the push method, add the number 7 to the nums array.
 // Add code here
 
+nums.push(7);
 
 
 // Uncomment below to check your answers
-// console.log(nums); // [1, 2, 3, 4, 5, 6, 7]
+console.log(nums); // [1, 2, 3, 4, 5, 6, 7]
 
 // Challenge continued
 
@@ -66,15 +74,20 @@ const moreNums = [11, 22, 33, 44, 55];
 // Using the pop method, remove the last item of the moreNums array.
 // Add code here
 
+moreNums.pop();
 
 
 // Uncomment below to check your answers
-// console.log(moreNums); // [11, 22, 33, 44]
+console.log(moreNums); // [11, 22, 33, 44]
+
+// practice
+
+console.log(moreNums.length);
 
 //Do not alter below this line
-export const bundle = {
-  cities: cities,
-  citiesLength: citiesLength,
-  nums: nums,
-  moreNums: moreNums,
-};
+// export const bundle = {
+//   cities: cities,
+//   citiesLength: citiesLength,
+//   nums: nums,
+//   moreNums: moreNums,
+// };

@@ -8,11 +8,20 @@
 
 // Challenge 4: Declare a variable `programmingHesitations` and set it's value to null
 
+const birthCity = "Fountain Valley";
+const birthYear = 1989;
+let loveCoding = true;
+let programmingHesitations = null;
+
+let testArray = [birthCity, birthYear, loveCoding, programmingHesitations]
+
+console.log(testArray)
+
 
 // Do not alter these lines
-export const bundle = {
-  birthCity,
-  birthYear,
-  loveCoding,
-  programmingHesitations,
-};
+// export const bundle = {
+//  birthCity,
+//  birthYear,
+//  loveCoding,
+//  programmingHesitations,
+//};

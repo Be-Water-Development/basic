@@ -31,20 +31,20 @@
 // Declare a variable upper and set it’s value equal to the string soccerChant converted to uppercase letters.
 // Declare a variable lower and set it’s value equal to the string soccerChant converted to lowercase letters.
 
-let soccerTeam;
-let soccerChant;
-
+let soccerTeam = "Barcelona";
+let soccerChant = "Blue and claret blowing in the wind";
+''
 //Add code here
 
-let count;
-let upper;
-let lower;
+let count = soccerTeam.length;
+let upper = soccerChant.toUpperCase();
+let lower = soccerChant.toLowerCase();
 
 //Uncomment below to check your answers
-// console.log(count); // 16
-// console.log(upper); // "GREEN IS THE COLOR"
-// console.log(lower); // "green is the color"
+console.log(count); // 16
+console.log(upper); // "GREEN IS THE COLOR"
+console.log(lower); // "green is the color"
 
 //Do not alter below this line
-const bundle = { lengthCount: count, upperCase: upper, lowerCase: lower };
-export { bundle };
+// const bundle = { lengthCount: count, upperCase: upper, lowerCase: lower };
+// export { bundle };

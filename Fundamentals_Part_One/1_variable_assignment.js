@@ -9,9 +9,26 @@
 // the first key's value will be your created var variable
 // the second key's value will be your array
 
-var number;
-let array;
-const object;
+var number = 10;
+
+let array = [true, 7, "dog"];
+
+const object = {
+    "num": number,
+    "arr": array,
+};
+
+const objectTest = {
+    num: number,
+    arr: array,
+};
+
+console.log(number)
+console.log(array)
+console.log(object)
+console.log(object.num)
+console.log(object.arr)
+console.log(objectTest)
 
 // Do not alter below this line
-export const bundle = { num: number, arr: array, obj: object };
+// export const bundle = { num: number, arr: array, obj: object };

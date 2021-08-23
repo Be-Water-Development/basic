@@ -18,15 +18,16 @@ let numToSubtract = 10;
 
 //Add code here to add one to numToAdd using the increment operator.
 
-
+numToAdd++;
 
 //Add the code here to subtract one from numToSubtract using the decrement operator
 
+numToSubtract--;
 
 
 // Uncomment below to check your work
-// console.log(numToAdd); // 5
-// console.log(numToSubtract); // 9
+console.log(numToAdd); // 5
+console.log(numToSubtract); // 9
 
 //Do not alter below this line
-export const bundle = { numToAdd: numToAdd, numToSubtract: numToSubtract };
+// export const bundle = { numToAdd: numToAdd, numToSubtract: numToSubtract };

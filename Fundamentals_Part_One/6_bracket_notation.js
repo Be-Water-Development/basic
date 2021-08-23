@@ -42,14 +42,22 @@ const answer = "because they didn’t get arrays";
 
 //Add code here
 
-const firstChar;
-const tenthChar;
-const lastChar;
+const firstChar = joke[0];
+const tenthChar = joke[9];
+const lastChar = answer[answer.length-1];
+
+let textTwo = "light";
+textTwo = "night";
+console.log(textTwo);
+
+let textThree = "light";
+textThree = "night";
+console.log(textTwo);
 
 // Uncomment below to check your answers
-// console.log(firstChar); // "w"
-// console.log(tenthChar); // "h"
-// console.log(lastChar); // "s"
+console.log(firstChar); // "w"
+console.log(tenthChar); // "h"
+console.log(lastChar); // "s"
 
 // Do not alter below this line
-export const bundle = { first: firstChar, tenth: tenthChar, last: lastChar };
+// export const bundle = { first: firstChar, tenth: tenthChar, last: lastChar };
