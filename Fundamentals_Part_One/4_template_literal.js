@@ -24,6 +24,13 @@
 // "The sum of a and b is c"
 // Do not include punctuation in your solution.
 
+const x = 4;
+const y = 19;
+
+const solution = `The sum of x and y is ${x + y}`;
+
+// Output Test
+// console.log(solution);
 
 //Do not alter below this line
 export const bundle = { x: x, y: y, solution: solution };

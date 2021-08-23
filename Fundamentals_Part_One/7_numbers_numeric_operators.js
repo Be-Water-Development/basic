@@ -40,6 +40,11 @@
 // Declare a variable timesTen and set it equal to the variable oneHundred times ten.
 // Declare a variable divideByFive and set it equal to the variable oneHundred divided by five.
 
+const oneHundred = 100;
+const plusTen = oneHundred + 10;
+const minusTen = oneHundred - 10;
+const timesTen = oneHundred * 10;
+const divideByFive = oneHundred / 5;
 
 //Uncomment the following to check your answers
 // console.log(oneHundred); // 100
@@ -49,10 +54,10 @@
 // console.log(divideByFive); // 20
 
 //Do not alter below this line
-export const bundle = {
+/* export const bundle = {
   num: oneHundred,
   plusTen: plusTen,
   minusTen: minusTen,
   timesTen: timesTen,
   divideByFive: divideByFive,
-};
+}; */

@@ -8,7 +8,11 @@ const first = "Welcome";
 const second = "to the";
 const third = "jungle!";
 
-const welcomeStatement;
+const welcomeStatement = [first+" "+second+" "+third];
+
+// console.log provides an output. Not necessary for welcomeStatement to be assigned the correct value; used for testing only.
+// Output Test
+// console.log(welcomeStatement);
 
 // Do not alter below this line
 export const bundle = { welcomeStatement };

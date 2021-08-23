@@ -42,9 +42,11 @@ const answer = "because they didn’t get arrays";
 
 //Add code here
 
-const firstChar;
-const tenthChar;
-const lastChar;
+const firstChar = joke[0];
+const tenthChar = joke[9];
+// Use this to determine length of `answer`.
+// console.log(answer.length);
+const lastChar = answer[29];
 
 // Uncomment below to check your answers
 // console.log(firstChar); // "w"

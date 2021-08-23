@@ -29,6 +29,11 @@
 // Declare a constant sixtySixModSeven and assign it the value of the remainder of dividing 66 by 7.
 // Declare a constant sevenModEight and assign it the value of the remainder of dividing 7 by 8.
 
+const sixSquared = 6 ** 2;
+const fourCubed = 4 **3;
+const sixtySixModSeven = 66 % 7;
+const sevenModEight = 7 % 8;
+
 //Uncomment below to check your answers
 // console.log(sixSquared); // 36
 // console.log(fourCubed); // 64
@@ -36,9 +41,9 @@
 // console.log(sevenModEight); // 7
 
 //Do not alter below this line
-export const bundle = {
+/* export const bundle = {
   sixSquared: sixSquared,
   fourCubed: fourCubed,
   sixtySixModSeven: sixtySixModSeven,
   sevenModEight: sevenModEight,
-};
+}; */

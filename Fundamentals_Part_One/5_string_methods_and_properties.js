@@ -40,11 +40,19 @@ let count;
 let upper;
 let lower;
 
+count = "soccerTeam".length;
+upper = "soccerChant".toUpperCase();
+lower = "soccerChant".toLowerCase();
+
+console.log(count);
+console.log(upper);
+console.log(lower);
+
 //Uncomment below to check your answers
 // console.log(count); // 16
 // console.log(upper); // "GREEN IS THE COLOR"
 // console.log(lower); // "green is the color"
 
 //Do not alter below this line
-const bundle = { lengthCount: count, upperCase: upper, lowerCase: lower };
-export { bundle };
+/* const bundle = { lengthCount: count, upperCase: upper, lowerCase: lower };
+export { bundle }; */

@@ -37,6 +37,16 @@
 
 //Add code here
 
+// Test 1
+const stringOrNum = 5 + 5 + "5" + 5;
+// Output Expectation: "5555", Output Actual: "1055"
+
+// Test 2
+/* const stringOrNum = (5+5+"5"+5); */
+// Output Expectation: "5555", Output Actual: "1055"
+
+// NOTE: Adding Number(value) or String(value) will convert the variable into the corresponding data type: [https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion]
+
 //Uncomment to check your answer
 //console.log(stringOrNum);
 
@@ -59,6 +69,11 @@ const timesEatenType = typeof timesEaten;
 const eatAgainType = typeof eatAgain;
 const ripeProgressionArray = Array.isArray(ripeProgression);
 
+/* const favFoodType = typeof favFood;
+const timesEatenType = typeof timesEaten;
+const eatAgainType = typeof eatAgain;
+const ripeProgressionArray = Array.isArray(ripeProgression); */
+
 // Uncomment below to check your answers
 // console.log(favFoodType); // "string"
 // console.log(timesEatenType); // "number"
@@ -66,10 +81,10 @@ const ripeProgressionArray = Array.isArray(ripeProgression);
 // console.log(ripeProgressionArray); // "true"
 
 //Do not alter below this line
-export const bundle = {
+/* export const bundle = {
   stringOrNum: stringOrNum,
   favFoodType: favFoodType,
   timesEatenType: timesEatenType,
   eatAgainType: eatAgainType,
   ripeProgressionArray: ripeProgressionArray,
-};
+}; */
