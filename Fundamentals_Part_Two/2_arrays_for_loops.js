@@ -62,8 +62,12 @@ let countToTen = 0;
 
 // Add code here
 
+for ( countToTen; countToTen <= 10; countToTen++) {
+  console.log(countToTen);
+}
+
 // Uncomment below to check your answers
-// console.log(countToTen); // 10
+ // 10
 
 // Challenge continued
 
@@ -72,10 +76,12 @@ let countToTen = 0;
 const nums = [1, 2, 3, 4, 5, 6];
 
 // Add code here
-
+for (let i = 0; i < nums.length; i++) {
+nums[i] = (i+1) * 11;
+}
 
 // Uncomment below to check your answers
-// console.log(nums); // [ 11, 22, 33, 44, 55, 66 ]
+console.log(nums); // [ 11, 22, 33, 44, 55, 66 ]
 
 // Challenge continued
 
@@ -85,8 +91,13 @@ const weatherUpdate = [];
 // Iterate over the weather array using a for loop, pushing a string with the format "It is [weather] outside" into the weatherUpdate array.
 // Add code here
 
+for (let i = 0; i < weather.length; i++) {
+weatherUpdate[i] = 'It is ' + weather[i] + ' outside';
+}
+
+
 // Uncomment below to check your answers
-// console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
+console.log(weatherUpdate); //['It is raining outside', 'It is sunny outside', 'It is stormy outside', 'It is hailing outside' ]
 
 //Challenge continued
 
@@ -110,13 +121,29 @@ const nationalParks = [];
 
 //Add code here
 
+for (let i = 0; i < park.length; i++) {
+  nationalParks[i] = park[i] + ' National Park is in ' + location[i] + ' and attractions are ' + attraction[i];
+}
+
+
 // Uncomment below to check your answers
-// console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
+console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
+
+//practice
+const nationalParks2 = [];
+
+for (let i=0; i<location.length; i++) {
+  nationalParks2[i] = `${park[i]} National Park is in ${location[i]} and attractions are ${attraction[i]}`;
+}
+
+console.log(nationalParks2);
+
+// note: i tried doing i+1 for the third expression, increment expression and it didn't seem to work. I'd like to know what's the deal there.
 
 //Do not alter below this line
-export const bundle = {
-  countToTen: countToTen,
-  nums: nums,
-  weatherUpdate: weatherUpdate,
-  nationalParks: nationalParks,
-};
+// export const bundle = {
+//   countToTen: countToTen,
+//   nums: nums,
+//   weatherUpdate: weatherUpdate,
+//   nationalParks: nationalParks,
+// };
