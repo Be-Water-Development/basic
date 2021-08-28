@@ -38,10 +38,7 @@ const lotteryNum = 7;
 // Here is an example:
 
 //Uncomment the code below
-// if (lotteryNum === 10) {
-//   console.log("Winner winner");
-// }
-// if (lotteryNum === 8) {
+//  if (lotteryNum === 8) {
 //   console.log("Second place");
 // }
 // if (lotteryNum !== 8 && lotteryNum !== 10) {
@@ -60,9 +57,16 @@ let result;
 // If num is less than 10, assign the value of result to num times 11.
 // Add code here
 
+if (num > 10) {
+  result = true;
+}
+if (num < 10) {
+  result = num * 11;
+}
+
 
 // Uncomment the below to check your answers
-// console.log(result); // 88
+console.log(result); // 88
 
 // Challenge continued
 
@@ -72,9 +76,23 @@ const fizzbuzz = [];
 // 5, and fizzbuzz in place of numbers divisible by both 3 and 5. Remember to utilize the remainder/modulo operator.
 // Add code here
 
+for (let i = 1; i <= 20; i++) {
+  fizzbuzz[i] = i;
+  if (fizzbuzz[i] % 3 === 0 && fizzbuzz[i] % 5 === 0) {
+    fizzbuzz[i] = "fizzbuzz";
+  }
+  if (fizzbuzz[i] % 3 === 0) {
+    fizzbuzz[i] = "fizz";
+  }
+  if (fizzbuzz[i] % 5 === 0) {
+    fizzbuzz[i] = "buzz";
+  }
+ 
+}
+
 
 // Uncomment the below to check your answers
-// console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
+console.log(fizzbuzz); // [1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz', 16, 17, 'fizz', 19, 'buzz']
 
 // Challenge continued
 
@@ -82,13 +100,19 @@ const isItEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Iterate through the isItEven array, if the number is even, multiply the number by 10.
 
+for (let i = 0; i < isItEven.length; i++) {
+  if (isItEven[i] % 2 === 0) {
+    isItEven[i]*=10;
+  }
+}
+
 
 // Uncomment the below to check your answers
-// console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
+console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
 
 // Do not alter below this line
-export const bundle = {
-  result: result,
-  fizzbuzz: fizzbuzz,
-  isItEven: isItEven,
-};
+// `export const bundle = {
+//   result: result,
+//   fizzbuzz: fizzbuzz,
+//   isItEven: isItEven,
+// };
