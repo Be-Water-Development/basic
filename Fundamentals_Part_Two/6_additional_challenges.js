@@ -6,10 +6,12 @@
 const nestedSubarray = [];
 
 // Add code here
-
+for (let i = 0; i <= 7; i++) {
+  nestedSubarray.push([`iteration${i}, ${(i)}`]);
+}
 
 // Uncomment below to check your answer
-// console.log(nestedSubarray); // [['iteration0, 0'], ['iteration1, 1'], ['iteration2, 2'], ['iteration3, 3'], ['iteration4, 4'], ['iteration5, 5'], ['iteration6, 6'], ['iteration7, 7']]
+console.log(nestedSubarray); // [['iteration0, 0'], ['iteration1, 1'], ['iteration2, 2'], ['iteration3, 3'], ['iteration4, 4'], ['iteration5, 5'], ['iteration6, 6'], ['iteration7, 7']]
 
 // Challenge continued
 
@@ -20,10 +22,29 @@ const animals = ["snake", "elephant", "spider", "mouse", "seal"];
 const sStrings = {};
 
 // Add code here
+for ( let i = 0; i < animals.length; i++) {
+  if (animals[i].startsWith("s",0)){
+    sStrings[animals[i]] = [i];
+  }
+}
+
 
 
 // Uncomment below to check your answer
-// console.log(sStrings); // { snake: 0, spider: 2, seal: 4 }
+console.log(sStrings); // { snake: 0, spider: 2, seal: 4 }
+
+//practice
+// const animals2 = ["snake", "elephant", "spider", "mouse", "seal"];
+// const sStrings2 = {};
+
+// // Add code here
+// for ( let i = 0; i < animals2.length; i++) {
+//   if (animals2[i].startsWith("s",0)){
+//     sStrings2.animals2[i] = [i];            // didn't work
+//   }
+// }
+
+// console.log(sStrings2);
 
 // Challenge continued
 
@@ -43,8 +64,8 @@ let sum = 0;
 // Uncomment below to check your answer
 // console.log(sum); // 18
 
-export const bundle = {
-  nestedSubarray: nestedSubarray,
-  sStrings: sStrings,
-  sum: sum,
-};
+// export const bundle = {
+//   nestedSubarray: nestedSubarray,
+//   sStrings: sStrings,
+//   sum: sum,
+// };
