@@ -15,7 +15,7 @@
 // console.log(text[0]); // "l"
 // text[0] = "n";
 
-// console.log(text[0]); // "l"
+// console.log(text[0]); // "l"sdfasdfasdfasdfsdfsadfds
 // console.log(text); // "light"
 
 // Text does not change from “light” to “night” because strings are immutable. If you wanted to change the value, you would have to reassign the value:
