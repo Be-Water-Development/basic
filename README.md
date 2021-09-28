@@ -33,5 +33,6 @@ Repository for JS Basics
 
 # Finished:
 - push final commit 
-- slack xavyr that you are finished with <b>your branch name</b>
-- I will pull down your code and review to professional standards
+- open a `merge` request against the `develop` branch. 
+- slack xavyr the link of the `merge` request; this is exactly the same flow we use in software development teams. 
+- I will review your code to professional standards and ask you via Slack to ammend files if changes are necessary. 
