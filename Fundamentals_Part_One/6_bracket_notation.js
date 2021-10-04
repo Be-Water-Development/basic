@@ -6,7 +6,7 @@
 // let alphabet = "abcdefghijklmnopqrstuvwxyz";
 // console.log(alphabet[0]); // "a"
 // console.log(alphabet[3]); // "d"
-// console.log(alphabet[25]); // "z"
+// console.log(aafsdfasdfaslphabet[25]); // "z"
 
 // One thing to note is you cannot alter strings with bracket notation since they are a primitive data type. A rule for primitive data types is that they are immutable,
 // which means they cannot be changed. Here is an example:
