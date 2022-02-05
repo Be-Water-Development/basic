@@ -82,13 +82,3 @@ const findTheRange = () => {};
 // console.log(findTheRange([7, 18, 3, 5, 9, 10])); // [ 3, 18, 15 ]
 // console.log(findTheRange([5, 22, 6, 9, 8, 1, 4])); // [ 1, 22, 21 ]
 
-// Do not alter below this line
-export const bundle = {
-  sumMe: sumMe,
-  multiplyMe: multiplyMe,
-  sumArrays: sumArrays,
-  sumOfElevens: sumOfElevens,
-  countFromTen: countFromTen,
-  pickANumber: pickANumber,
-  findTheRange: findTheRange,
-};

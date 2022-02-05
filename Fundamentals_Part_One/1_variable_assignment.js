@@ -13,5 +13,3 @@ var number;
 let array;
 const object;
 
-// Do not alter below this line
-export const bundle = { num: number, arr: array, obj: object };

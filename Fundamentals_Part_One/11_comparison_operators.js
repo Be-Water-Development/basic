@@ -63,13 +63,3 @@ let likesBears = false; // notice no quotes
 // console.log(isLooselyEqual); // true
 // console.log(isStrictlyEqual); // false
 
-//Do not alter below this line
-export const bundle = {
-  smallNum: smallNum,
-  bigNum: bigNum,
-  isBigger: isBigger,
-  favNum: favNum,
-  favNumString: favNumString,
-  isLooselyEqual: isLooselyEqual,
-  isStrictlyEqual: isStrictlyEqual,
-};

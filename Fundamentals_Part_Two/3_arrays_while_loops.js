@@ -36,5 +36,3 @@ let countDown = 10;
 // Uncomment below to check your answers
 // console.log(sum); // 105
 
-//Do not alter below this line
-export const bundle = { countDown: countDown, sum: sum };

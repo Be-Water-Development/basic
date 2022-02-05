@@ -22,8 +22,3 @@ const timeLog = (time, index) => {
 
 forEach(waitTime, timeLog);
 
-// Do not alter below this line
-export const bundle = {
-  timeLog: timeLog,
-  forEach: forEach,
-};

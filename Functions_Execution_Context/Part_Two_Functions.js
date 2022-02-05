@@ -72,16 +72,3 @@ const findRemainder;
 // console.log(findRemainder(100, 13)); // 9
 // console.log(findRemainder(10, 77)); // 7
 // console.log(findRemainder(4, 66)); // 2
-
-// Do not alter below this line
-export const bundle = {
-  one: one,
-  two: two,
-  dwight: dwight,
-  bears: bears,
-  orderFood: orderFood,
-  restaurantOpen: restaurantOpen,
-  callRestaurant: callRestaurant,
-  isEven: isEven,
-  findRemainder: findRemainder,
-};

@@ -45,6 +45,4 @@ let lower;
 // console.log(upper); // "GREEN IS THE COLOR"
 // console.log(lower); // "green is the color"
 
-//Do not alter below this line
-const bundle = { lengthCount: count, upperCase: upper, lowerCase: lower };
-export { bundle };
+

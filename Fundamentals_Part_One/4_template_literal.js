@@ -25,5 +25,3 @@
 // Do not include punctuation in your solution.
 
 
-//Do not alter below this line
-export const bundle = { x: x, y: y, solution: solution };

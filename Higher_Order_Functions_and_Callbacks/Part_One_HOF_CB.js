@@ -94,16 +94,3 @@ const orFilter;
 //   )
 // ); // [ 'bobcats', 'monkeys', 'seal', 'snake' ]
 
-// Do not alter below this line
-export const bundle = {
-  pastTense: pastTense,
-  map: map,
-  timesEleven: timesEleven,
-  mapTwo: mapTwo,
-  forEach: forEach,
-  filterThisArray: filterThisArray,
-  cb1: cb1,
-  cb2: cb2,
-  arrayOfThings: arrayOfThings,
-  orFilter: orFilter,
-};

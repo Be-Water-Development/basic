@@ -106,19 +106,3 @@ const swapMe = replaceMe();
 //   )
 // ); // Twinkle, twinkle, little closure, How I wonder what you are, Up above the world so high, Like a variable in the sky
 
-// Do not alter below this line
-export const bundle = {
-  pause: pause,
-  pauseFunc: pauseFunc,
-  count: count,
-  passCode: passCode,
-  timesElevenAndLog: timesElevenAndLog,
-  getSeason: getSeason,
-  seasonCycle: seasonCycle,
-  firstInput: firstInput,
-  addToTen: addToTen,
-  plusTen: plusTen,
-  currentDate: currentDate,
-  replaceMe: replaceMe,
-  swapMe: swapMe,
-};

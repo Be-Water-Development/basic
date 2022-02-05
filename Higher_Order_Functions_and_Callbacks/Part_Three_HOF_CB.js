@@ -120,12 +120,3 @@ const elloKeys;
 //   )
 // ); // [ 'good', 'job', 'with', 'this', 'unit' ]
 
-// Do not alter below this line
-export const bundle = {
-  messOfArrays: messOfArrays,
-  amITrue: amITrue,
-  sortMe: sortMe,
-  byFive: byFive,
-  groupMe: groupMe,
-  elloKeys: elloKeys,
-};

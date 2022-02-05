@@ -44,10 +44,3 @@ let numToDivide = 8;
 // console.log(numToMultiply); // 70
 // console.log(numToDivide); // 4
 
-//Do not alter below this line
-export const bundle = {
-  numToAdd: numToAdd,
-  numToSubtract: numToSubtract,
-  numToMultiply: numToMultiply,
-  numToDivide: numToDivide,
-};

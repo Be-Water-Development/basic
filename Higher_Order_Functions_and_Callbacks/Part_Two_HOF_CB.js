@@ -109,13 +109,3 @@ const arrIntoObj;
 //   arrIntoObj(["ORANGE", "PINEAPPLE", "MANGO"], (s) => s.toLowerCase())
 // ); // { ORANGE: 'orange', PINEAPPLE: 'pineapple', MANGO: 'mango' }
 
-// Do not alter below this line
-export const bundle = {
-  mapMe: mapMe,
-  reduce: reduce,
-  reduceMe: reduceMe,
-  crossRoads: crossRoads,
-  duplicates: duplicates,
-  matchMe: matchMe,
-  arrIntoObj: arrIntoObj,
-};

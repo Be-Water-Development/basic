@@ -51,5 +51,3 @@ const lastChar;
 // console.log(tenthChar); // "h"
 // console.log(lastChar); // "s"
 
-// Do not alter below this line
-export const bundle = { first: firstChar, tenth: tenthChar, last: lastChar };

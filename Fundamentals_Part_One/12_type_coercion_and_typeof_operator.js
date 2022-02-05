@@ -65,11 +65,3 @@ const ripeProgressionArray = Array.isArray(ripeProgression);
 // console.log(eatAgainType); // "boolean"
 // console.log(ripeProgressionArray); // "true"
 
-//Do not alter below this line
-export const bundle = {
-  stringOrNum: stringOrNum,
-  favFoodType: favFoodType,
-  timesEatenType: timesEatenType,
-  eatAgainType: eatAgainType,
-  ripeProgressionArray: ripeProgressionArray,
-};

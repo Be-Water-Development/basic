@@ -71,13 +71,3 @@ const funcArray = [timesEleven, plusSeven, divideByTwo, minusTen];
 // console.log(pass(5, funcArray)); // 21
 // console.log(pass(3, funcArray)); // 10
 
-// Do not alter below this line
-export const bundle = {
-  repeatMe: repeatMe,
-  sumMe: sumMe,
-  factorial: factorial,
-  getLength: getLength,
-  powerOf: powerOf,
-  pass: pass,
-  funcArray: funcArray,
-};

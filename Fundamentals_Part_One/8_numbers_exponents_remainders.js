@@ -35,10 +35,3 @@
 // console.log(sixtySixModSeven); // 3
 // console.log(sevenModEight); // 7
 
-//Do not alter below this line
-export const bundle = {
-  sixSquared: sixSquared,
-  fourCubed: fourCubed,
-  sixtySixModSeven: sixtySixModSeven,
-  sevenModEight: sevenModEight,
-};

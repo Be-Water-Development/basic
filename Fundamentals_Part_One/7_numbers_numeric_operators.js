@@ -48,11 +48,3 @@
 // console.log(timesTen); // 1000
 // console.log(divideByFive); // 20
 
-//Do not alter below this line
-export const bundle = {
-  num: oneHundred,
-  plusTen: plusTen,
-  minusTen: minusTen,
-  timesTen: timesTen,
-  divideByFive: divideByFive,
-};

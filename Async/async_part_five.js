@@ -22,7 +22,3 @@ order([green, eggs, andHam], [300, 200, 500]);
 // 'eggs' 200ms after green
 // '& ham' 500ms after eggs
 
-// Do not alter below this line
-export const bundle = {
-  order: order,
-};

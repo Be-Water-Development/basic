@@ -10,5 +10,4 @@ const third = "jungle!";
 
 const welcomeStatement;
 
-// Do not alter below this line
-export const bundle = { welcomeStatement };
+

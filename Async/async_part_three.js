@@ -23,8 +23,3 @@ const dataStore;
 
 ajaxSimulate(2, dataStore);
 
-// Do not alter below this line
-export const bundle = {
-  dataStore: dataStore,
-  ajaxSimulate: ajaxSimulate,
-};

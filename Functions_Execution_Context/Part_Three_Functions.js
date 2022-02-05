@@ -88,12 +88,3 @@ const addX;
 // console.log(addX([1, 2, 3, 4], 2)); // [ 3, 4, 5, 6 ]
 // console.log(addX([7, 8, 9, 10], 10)); // [ 17, 18, 19, 20 ]
 
-// Do not alter below this line
-export const bundle = {
-  sunshine: sunshine,
-  getGrade: getGrade,
-  treasure: treasure,
-  endsWithS: endsWithS,
-  y2K: y2K,
-  addX: addX,
-};

@@ -126,11 +126,3 @@ let ageByFive;
 // Uncomment below to check your answers
 // console.log(ages); // [ 17, 25, 66, 42 ]
 // console.log(ageByFive); // true
-
-// Do not alter below this line
-export const bundle = {
-  found: found,
-  greaterThanFive: greaterThanFive,
-  ages: ages,
-  ageByFive: ageByFive,
-};

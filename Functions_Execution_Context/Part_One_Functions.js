@@ -66,12 +66,3 @@ const sunglasses;
 // console.log(typeof sunglasses); // function
 // console.log(sunglasses("night")); // I wear my sunglasses at night
 
-// Do not alter below this line
-export const bundle = {
-  addTen: addTen,
-  addExclamation: addExclamation,
-  whatsUp: whatsUp,
-  addTwoNums: addTwoNums,
-  lastLetter: lastLetter,
-  sunglasses: sunglasses,
-};

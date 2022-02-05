@@ -113,10 +113,3 @@ const nationalParks = [];
 // Uncomment below to check your answers
 // console.log(nationalParks); // ["Glacier National Park is in Montana and attractions are 700 miles of hiking trails", "Yellowstone National Park is in Wyoming and attractions are hot springs and geysers", "Yosemite National Park is in California and attractions are El Capitan and Half Dome"];
 
-//Do not alter below this line
-export const bundle = {
-  countToTen: countToTen,
-  nums: nums,
-  weatherUpdate: weatherUpdate,
-  nationalParks: nationalParks,
-};

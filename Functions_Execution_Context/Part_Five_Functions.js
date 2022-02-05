@@ -82,12 +82,3 @@ const theEnd = function endOfUnit() {};
 // console.log(typeof theEnd); // function
 // console.log(theEnd()); // Congrats, you completed the functions unit!
 
-// Do not alter below this line
-export const bundle = {
-  sumOfOddThings: sumOfOddThings,
-  removeVowels: removeVowels,
-  addPear: addPear,
-  whereInTheWorld: whereInTheWorld,
-  buildArray: buildArray,
-  theEnd: theEnd,
-};

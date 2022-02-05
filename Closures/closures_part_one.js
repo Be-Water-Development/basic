@@ -104,17 +104,3 @@ const postCall = post(4, called);
 // console.log(postCall("partner")); // undefined
 // console.log(postCall("partner")); // undefined
 // console.log(postCall("partner")); // "Howdy partner"
-
-// Do not alter below this line
-export const bundle = {
-  myFunc: myFunc,
-  welcomeTo: welcomeTo,
-  passingStrings: passingStrings,
-  passedFunc: passedFunc,
-  addByY: addByY,
-  addByThree: addByThree,
-  timesElevenOneTime: timesElevenOneTime,
-  oneTime: oneTime,
-  postCall: postCall,
-  post: post,
-};

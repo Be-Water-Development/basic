@@ -7,8 +7,3 @@ const runAtInterval;
 
 // Uncomment below to check your work
 runAtInterval(() => console.log("interval"), 100, 650); // should log "interval" once per 100ms, six times.
-
-// Do not alter below this line
-export const bundle = {
-  runAtInterval: runAtInterval,
-};

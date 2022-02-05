@@ -28,5 +28,3 @@ let numToSubtract = 10;
 // console.log(numToAdd); // 5
 // console.log(numToSubtract); // 9
 
-//Do not alter below this line
-export const bundle = { numToAdd: numToAdd, numToSubtract: numToSubtract };

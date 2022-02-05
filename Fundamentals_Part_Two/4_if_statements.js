@@ -86,9 +86,3 @@ const isItEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Uncomment the below to check your answers
 // console.log(isItEven); // [1, 20, 3, 40, 5, 60, 7, 80, 9, 100]
 
-// Do not alter below this line
-export const bundle = {
-  result: result,
-  fizzbuzz: fizzbuzz,
-  isItEven: isItEven,
-};

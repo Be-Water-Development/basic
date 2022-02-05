@@ -70,11 +70,3 @@ const moreNums = [11, 22, 33, 44, 55];
 
 // Uncomment below to check your answers
 // console.log(moreNums); // [11, 22, 33, 44]
-
-//Do not alter below this line
-export const bundle = {
-  cities: cities,
-  citiesLength: citiesLength,
-  nums: nums,
-  moreNums: moreNums,
-};
