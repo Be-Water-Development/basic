@@ -7,12 +7,3 @@
 // Challenge 3: Declare a constant `loveCoding` that is a boolean, and set it equal to true.
 
 // Challenge 4: Declare a variable `programmingHesitations` and set it's value to null
-
-
-// Do not alter these lines
-export const bundle = {
-  birthCity,
-  birthYear,
-  loveCoding,
-  programmingHesitations,
-};

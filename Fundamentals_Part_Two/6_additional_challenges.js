@@ -43,8 +43,3 @@ let sum = 0;
 // Uncomment below to check your answer
 // console.log(sum); // 18
 
-export const bundle = {
-  nestedSubarray: nestedSubarray,
-  sStrings: sStrings,
-  sum: sum,
-};
