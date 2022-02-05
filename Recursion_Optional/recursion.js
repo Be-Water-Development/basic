@@ -1,5 +1,8 @@
-// Challenge
+// At this stage in the program these challenges are optional. 
+// Completely up to you as to when you will conquer these but
+// do not delay starting your next repo -- Algos -- for these challenges. 
 
+// Challenges
 // Create a function repeatMe that takes an input character and returns that character repeated 6 times using recursion.
 
 function repeatMe(){}
