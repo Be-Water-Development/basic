@@ -4,7 +4,7 @@ Repository for JS Basics
 ## To Begin:
 - clone down repo at branch `develop`
 - cut from current branch (`develop`) to `choose-branch-name` -- Choose a new name for a branch, make it logical, like the bundle of work or directory you will be commiting for this branch.
-- from terminal in repository on branch `choose-branch-name` run `npm install` (this installs necesssary JS packages)
+- from terminal in repository on branch `choose-branch-name`
 - begin coding...
 
 ### Merging:
