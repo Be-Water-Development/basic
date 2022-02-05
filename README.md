@@ -3,7 +3,7 @@ Repository for JS Basics
 
 ## To Begin:
 - clone down repo at branch `develop`
-- cut from current branch (`develop`) to `choose-branch-name` using the command `git checkout -b "chosen-branch-name" -- Choose a new name for a branch, make it logical, like the bundle of work or directory you will be commiting for this branch.
+- cut from current branch (`develop`) to `choose-branch-name` using the command `git checkout -b "chosen-branch-name"` -- Choose a new name for a branch, make it logical, like the bundle of work or directory you will be commiting for this branch.
 - begin coding...
 
 ### Merging:
