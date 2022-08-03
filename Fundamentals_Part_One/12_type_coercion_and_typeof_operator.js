@@ -54,11 +54,6 @@ const ripeProgression = ["hard", "soft"];
 
 //Add code here
 
-const favFoodType = typeof favFood;
-const timesEatenType = typeof timesEaten;
-const eatAgainType = typeof eatAgain;
-const ripeProgressionArray = Array.isArray(ripeProgression);
-
 // Uncomment below to check your answers
 // console.log(favFoodType); // "string"
 // console.log(timesEatenType); // "number"
