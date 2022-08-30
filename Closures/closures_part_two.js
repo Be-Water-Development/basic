@@ -61,9 +61,9 @@ const getSeason = seasonCycle(seasons);
 
 const firstInput;
 
-// Do not alter the below lines
 const add;
 
+// Do not alter the below lines
 const addToTen = firstInput(add, 10);
 
 // Uncomment below to check your work
