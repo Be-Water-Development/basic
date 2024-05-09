@@ -2,19 +2,18 @@
 
 // Create a function sumOfOddThings which takes two arrays as arguments. sumOfOddThings should add the sum of all the odd numbers in array2 to each odd number in array1.
 // Similarly, sumOfOddThings should also add the sum of all the odd numbers in array1 to each odd numbers in array2. The return value should be two nested subarrays,
-// the first subarray containing the modified array1 elements, the second containing the modified array2 elements. In addition, if any number in array2 is greater than 10,
-// muliple each number in array1 by 10.
+// the first subarray containing the modified array1 elements, the second containing the modified array2 elements.
 
 const sumOfOddThings = (arr1, arr2) => {
   let sumArr1 = 0;
   let sumArr2 = 0;
 
-  arr1.forEach((ele, index) => {};
 
 // Uncomment below to check your work
 // console.log(typeof sumOfOddThings);
 // console.log(sumOfOddThings([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])); // [ [ 17, 2, 19, 4, 21 ], [ 6, 16, 8, 18, 10 ] ]
-// console.log(sumOfOddThings([2, 3, 7, 8], [10, 13, 2, 1])); // [ [ 20, 170, 210, 80 ], [ 10, 23, 2, 11 ] ]
+
+// console.log(sumOfOddThings([2, 3, 7, 8], [10, 13, 2, 1])); // [ [ 2, 17, 21, 8 ], [ 10, 23, 2, 11 ] ]
 
 // Challenge continued
 
