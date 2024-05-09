@@ -8,16 +8,16 @@ const sumOfOddThings = (arr1, arr2) => {
   let sumArr1 = 0;
   let sumArr2 = 0;
 
+  // Uncomment below to check your work
+  // console.log(typeof sumOfOddThings);
+  // console.log(sumOfOddThings([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])); // [ [ 17, 2, 19, 4, 21 ], [ 6, 16, 8, 18, 10 ] ]
 
-// Uncomment below to check your work
-// console.log(typeof sumOfOddThings);
-// console.log(sumOfOddThings([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])); // [ [ 17, 2, 19, 4, 21 ], [ 6, 16, 8, 18, 10 ] ]
+  // console.log(sumOfOddThings([2, 3, 7, 8], [10, 13, 2, 1])); // [ [ 2, 17, 21, 8 ], [ 10, 23, 2, 11 ] ]
 
-// console.log(sumOfOddThings([2, 3, 7, 8], [10, 13, 2, 1])); // [ [ 2, 17, 21, 8 ], [ 10, 23, 2, 11 ] ]
+  // Challenge continued
 
-// Challenge continued
-
-// Create a function removeVowels with a string input, and returns a new string with all vowels removed.
+  // Create a function removeVowels with a string input, and returns a new string with all vowels removed.
+};
 
 const removeVowels = (string) => {};
 
@@ -80,4 +80,3 @@ const theEnd = function endOfUnit() {};
 // Uncomment below to check your work
 // console.log(typeof theEnd); // function
 // console.log(theEnd()); // Congrats, you completed the functions unit!
-
